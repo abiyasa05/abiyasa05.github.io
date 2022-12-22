@@ -13,6 +13,7 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Nulla autem aliquam ratione rem obcaecati quibusdam corporis, deleniti veritatis alias sunt repudiandae.
         Laborum exercitationem modi minima ex. Voluptatem maxime voluptates praesentium.</p>
+    <p>Sunan Drajat</p>
 </body>
 
 </html>
