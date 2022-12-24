@@ -59,7 +59,7 @@ $em = $ambil->fetch_assoc();
         }
     </style>
 
-    <title>SI - DO'I</title>
+    <title>SI - DO'I Tour Builder</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -90,13 +90,13 @@ $em = $ambil->fetch_assoc();
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Paket Ziarah</a>
+                    <a class="nav-link" href="paket_ziarah.php">Paket Ziarah</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Panduan Doa</a>
+                    <a class="nav-link" href="panduan_doa.php">Panduan Doa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">History Pesanan</a>
+                    <a class="nav-link" href="history_pesanan.php">History Pesanan</a>
                 </li>
             </ul>
             <form action="pencarian.php" method="get" class="form-inline my-2 my-lg-0 mr-5">
