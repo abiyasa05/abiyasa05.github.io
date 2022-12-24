@@ -1,13 +1,13 @@
 ﻿<?php
-    session_start();
-    //koneksi ke database
-    $koneksi = new mysqli("localhost","root","","toko");
+session_start();
+//koneksi ke database
+$koneksi = new mysqli("localhost", "root", "", "toko");
 
-    //jika belum login akan dilarikan ke halaman login
-    if (!isset($_SESSION["pelanggan"])) {
-    	echo "<script>alert('Silahkan login dulu!');</script>";
-		echo "<script>location='login.php';</script>";
-    }
+//jika belum login akan dilarikan ke halaman login
+if (!isset($_SESSION["pelanggan"])) {
+    echo "<script>alert('Silahkan login dulu!');</script>";
+    echo "<script>location='login.php';</script>";
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -43,6 +43,9 @@
                 </li>
                 <li>
                     <a href="index.php?halaman=produk"></i>Produk</a>
+                </li>
+                <li>
+                    <a href="index.php?halaman=panduan_doa"></i>Panduan Doa</a>
                 </li>
                 <li>
                     <a href="index.php?halaman=pembelian"></i>Pembelian</a>
@@ -92,74 +95,59 @@
             </nav>
 
             <?php
-                if (isset($_GET['halaman'])) {
-                    if ($_GET['halaman']=="produk") {
-                        include 'produk.php';
-                    }
-                    elseif ($_GET['halaman']=="pembelian") {
-                        include 'pembelian.php';
-                    }
-                    elseif ($_GET['halaman']=="pelanggan") {
-                        include 'pelanggan.php';
-                    }
-                    elseif ($_GET['halaman']=="detail") {
-                        include 'detail.php';
-                    }
-                    elseif ($_GET['halaman']=="tambahproduk") {
-                        include 'tambahproduk.php';
-                    }
-                    elseif ($_GET['halaman']=="hapusproduk") {
-                        include 'hapusproduk.php';
-                    }
-                    elseif ($_GET['halaman']=="ubahproduk") {
-                        include 'ubahproduk.php';
-                    }
-                    elseif ($_GET['halaman']=="hapuspelanggan") {
-                        include 'hapuspelanggan.php';
-                    }
-                    elseif ($_GET['halaman']=="logout") {
-                        include 'logout.php';
-                    }
-                    elseif ($_GET["halaman"]=="pembayaran") {
-                        include 'pembayaran.php';
-                    }
-                    elseif ($_GET["halaman"]=="laporan_pembelian") {
-                        include 'laporan_pembelian.php';
-                    }
-                    elseif ($_GET["halaman"]=="umpanbalik") {
-                        include 'umpanbalik.php';
-                    }
-                    elseif ($_GET["halaman"]=="hapusumpanbalik") {
-                        include 'hapusumpanbalik.php';
-                    }
-                    elseif ($_GET["halaman"]=="ongkir") {
-                        include 'ongkir.php';
-                    }
-                    elseif ($_GET["halaman"]=="hapusongkir") {
-                        include 'hapusongkir.php';
-                    }
-                    elseif ($_GET["halaman"]=="tambahongkir") {
-                        include 'tambahongkir.php';
-                    }
-                    elseif ($_GET["halaman"]=="komentar") {
-                        include 'komentar.php';
-                    }
-                    elseif ($_GET["halaman"]=="hapuskomentar") {
-                        include 'hapuskomentar.php';
-                    }
-                    elseif ($_GET["halaman"]=="hapuspembelian") {
-                        include 'hapuspembelian.php';
-                    }
-                    elseif ($_GET["halaman"]=="detailpembayaran") {
-                        include 'detailpembayaran.php';
-                    }
-                    elseif ($_GET["halaman"]=="batalpembayaran") {
-                        include 'batalpembayaran.php';
-                    }
+            if (isset($_GET['halaman'])) {
+                if ($_GET['halaman'] == "produk") {
+                    include 'produk.php';
+                } elseif ($_GET['halaman'] == "pembelian") {
+                    include 'pembelian.php';
+                } elseif ($_GET['halaman'] == "pelanggan") {
+                    include 'pelanggan.php';
+                } elseif ($_GET['halaman'] == "detail") {
+                    include 'detail.php';
+                } elseif ($_GET['halaman'] == "tambahproduk") {
+                    include 'tambahproduk.php';
+                } elseif ($_GET['halaman'] == "hapusproduk") {
+                    include 'hapusproduk.php';
+                } elseif ($_GET['halaman'] == "ubahproduk") {
+                    include 'ubahproduk.php';
+                } elseif ($_GET['halaman'] == "hapuspelanggan") {
+                    include 'hapuspelanggan.php';
+                } elseif ($_GET['halaman'] == "logout") {
+                    include 'logout.php';
+                } elseif ($_GET["halaman"] == "pembayaran") {
+                    include 'pembayaran.php';
+                } elseif ($_GET["halaman"] == "laporan_pembelian") {
+                    include 'laporan_pembelian.php';
+                } elseif ($_GET["halaman"] == "umpanbalik") {
+                    include 'umpanbalik.php';
+                } elseif ($_GET["halaman"] == "hapusumpanbalik") {
+                    include 'hapusumpanbalik.php';
+                } elseif ($_GET["halaman"] == "ongkir") {
+                    include 'ongkir.php';
+                } elseif ($_GET["halaman"] == "hapusongkir") {
+                    include 'hapusongkir.php';
+                } elseif ($_GET["halaman"] == "tambahongkir") {
+                    include 'tambahongkir.php';
+                } elseif ($_GET["halaman"] == "komentar") {
+                    include 'komentar.php';
+                } elseif ($_GET["halaman"] == "hapuskomentar") {
+                    include 'hapuskomentar.php';
+                } elseif ($_GET["halaman"] == "hapuspembelian") {
+                    include 'hapuspembelian.php';
+                } elseif ($_GET["halaman"] == "detailpembayaran") {
+                    include 'detailpembayaran.php';
+                } elseif ($_GET["halaman"] == "batalpembayaran") {
+                    include 'batalpembayaran.php';
+                } elseif ($_GET["halaman"] == "panduan_doa") {
+                    include 'panduan_doa.php';
+                } elseif ($_GET["halaman"] == "tambahpanduan") {
+                    include 'tambahpanduan.php';
+                } elseif ($_GET["halaman"] == "hapuspanduan") {
+                    include 'hapuspanduan.php';
                 }
-                else {
-                     include 'home.php';
-                }
+            } else {
+                include 'home.php';
+            }
             ?>
         </div>
     </div>
@@ -172,8 +160,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
                 $('#sidebar').toggleClass('active');
             });
         });
