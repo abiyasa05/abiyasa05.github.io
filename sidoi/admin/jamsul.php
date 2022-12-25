@@ -1,11 +1,11 @@
-<h2>Jam Penyusulan</h2>
+<h2>Data Penjemputan</h2>
 <hr color="black">
 <!--  -->
 <table class="table table-bordered table-responsive-md">
 	<thead>
 		<tr>
 			<th>No</th>
-			<th>Jam Penyusulan</th>
+			<th>Jam Penjemputan</th>
 			<th>Aksi</th>
 		</tr>
 	</thead>
@@ -24,4 +24,4 @@
 		<?php } ?>
 	</tbody>
 </table>
-<a href="index.php?halaman=tambahjamsul" class="btn btn-primary">Tambah Jam Penyusulan</a>
+<a href="index.php?halaman=tambahjamsul" class="btn btn-primary">Tambah Data Penjemputan</a>

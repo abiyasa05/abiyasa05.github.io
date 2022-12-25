@@ -21,7 +21,7 @@ if (!isset($_SESSION["pelanggan"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>Ez Game - Nota</title>
+	<title>Sidoi - Nota</title>
 	
 	<!-- CSS -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -114,7 +114,7 @@ if (!isset($_SESSION["pelanggan"])) {
     <!-- Konten -->
     <section class="konten">
     	<div class="container" style="margin-bottom: 50px;">
-    		<h3 style="margin-top: 35px;">Detail Pembelian</h3>
+    		<h3 style="margin-top: 35px;">Detail Transaksi</h3>
 			<hr color="black">
 
 			<?php
@@ -155,10 +155,10 @@ if (!isset($_SESSION["pelanggan"])) {
 					</p>
 				</div>
 				<div class="col-md-3 vl">
-					<h4>Pengiriman</h4>
-					<strong><?php echo $detail['nama_pulau']; ?></strong> <br>
-					Ongkos Kirim: Rp. <?php echo number_format($detail['tarif']); ?> <br>
-					Alamat: <?php echo $detail['alamat_pengiriman']; ?>
+					<h4>Penjemputan</h4>
+					<strong><?php echo $detail['tgl_penyusulan']; ?></strong> <br>
+					Jam Penjemputan: <?php echo $detail['jam_penyusulan']; ?> <br>
+					Alamat: <?php echo $detail['alamat_penyusulan']; ?>
 				</div>
 			</div>
 
@@ -166,11 +166,9 @@ if (!isset($_SESSION["pelanggan"])) {
 				<thead>
 					<tr>
 						<th>No</th>
-						<th>Nama Produk</th>
+						<th>Nama Paket</th>
 						<th>Harga</th>
-						<th>Berat</th>
 						<th>Jumlah</th>
-						<th>Subberat</th>
 						<th>Subtotal</th>
 					</tr>
 				</thead>
@@ -182,9 +180,7 @@ if (!isset($_SESSION["pelanggan"])) {
 						<td><?php echo $nomor; ?></td>
 						<td><?php echo $pecah['nama']; ?></td>
 						<td>Rp. <?php echo number_format($pecah['harga']); ?></td>
-						<td><?php echo $pecah['berat']; ?> Gram</td>
 						<td><?php echo $pecah['jumlah']; ?></td>
-						<td><?php echo $pecah['subberat']; ?> Gram</td>
 						<td>Rp. <?php echo number_format($pecah['subharga']); ?></td>
 					</tr>
 					<?php $nomor++; ?>

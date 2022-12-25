@@ -1,9 +1,9 @@
-<h2>Tambah Ongkos Kirim</h2>
+<h2>Tambah Data Penjemputan</h2>
 <hr color="black">
 <!--  -->
 <form method="post" enctype="multipart/form-data">
 	<div class="form-group">
-		<label>Jam Penyusulan</label>
+		<label>Jam Penjemputan</label>
 		<input type="time" class="form-control" name="nama">
 	</div>
 	<button class="btn btn-primary" name="save">Simpan</button>

@@ -165,27 +165,35 @@ $jum = mysqli_num_rows($data);
 			</table>
 			<form method="post">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-6">
 						<div class="form-group">
 							<input type="text" readonly style="background-color: white;" value="<?php echo $_SESSION["pelanggan"]["nama_pelanggan"] ?>" class="form-control">
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6">
 						<div class="form-group">
 							<input type="text" readonly style="background-color: white;" value="<?php echo $_SESSION["pelanggan"]["telepon_pelanggan"] ?>" class="form-control">
 						</div>
 					</div>
-					<div class="col-md-4">
+				</div>
+				<div class="row">
+					<div class="col-md-6">
 						<div class="form-group">
-							<select class="form-control" name="id_ongkir">
-								<option value="">Pilih Ongkos Kirim</option>
+							<label>Tanggal Penjemputan</label>
+							<input type="date" style="background-color: white;" class="form-control" name="tgl_penyusulan">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Jam Penjemputan</label>
+							<select class="form-control" name="id_jamsul">
+								<option value="">Pilih Jam Penjemputan</option>
 								<?php
-								$ambil = $koneksi->query("SELECT * FROM ongkir");
-								while($perongkir = $ambil->fetch_assoc()) {
+								$ambil = $koneksi->query("SELECT * FROM jamsul");
+								while($perjamsul = $ambil->fetch_assoc()) {
 								?>
-								<option value="<?php echo $perongkir["id_ongkir"] ?>">
-									<?php echo $perongkir['nama_pulau'] ?> -
-									Rp. <?php echo number_format($perongkir['tarif']) ?>
+								<option value="<?php echo $perjamsul["id_jamsul"] ?>">
+									<?php echo $perjamsul['jam_penyusulan'] ?>
 								</option>
 								<?php } ?>
 							</select>
@@ -193,8 +201,8 @@ $jum = mysqli_num_rows($data);
 					</div>
 				</div>
 				<div class="form-group">
-					<label>Alamat Lengkap Pengiriman</label>
-					<textarea class="form-control" name="alamat_pengiriman" placeholder="Masukkan alamat pengiriman secara lengkap beserta kode pos!"></textarea>
+					<label>Alamat Lengkap Penjemputan</label>
+					<textarea class="form-control" name="alamat_penyusulan" placeholder="Masukkan alamat penjemputan secara lengkap beserta kode pos!"></textarea>
 				</div>
 				<a href="keranjang.php" class="btn btn-secondary">Kembali</a>
 				<button class="btn btn-primary" name="checkout">Selanjutnya</button>
@@ -203,21 +211,21 @@ $jum = mysqli_num_rows($data);
 			<?php
 			if (isset($_POST["checkout"])) {
 				$email_pelanggan = $_SESSION["pelanggan"]["email_pelanggan"];
-				$id_ongkir = $_POST["id_ongkir"];
+				$id_jamsul = $_POST["id_jamsul"];
 				$tanggal_pembelian = date("Y-m-d");
-				$alamat_pengiriman = $_POST['alamat_pengiriman'];
+				$tgl_penyusulan = $_POST['tgl_penyusulan'];
+				$alamat_penyusulan = $_POST['alamat_penyusulan'];
 
-				$ambil = $koneksi->query("SELECT * FROM ongkir WHERE id_ongkir='$id_ongkir'");
-				$arrayongkir = $ambil->fetch_assoc();
-				$nama_pulau = $arrayongkir['nama_pulau'];
-				$tarif = $arrayongkir['tarif'];
+				$ambil = $koneksi->query("SELECT * FROM jamsul WHERE id_jamsul='$id_jamsul'");
+				$arrayjamsul = $ambil->fetch_assoc();
+				$jam_penyusulan = $arrayjamsul['jam_penyusulan'];
 
-				$total_pembelian = $totalbelanja + $tarif;
+				$total_pembelian = $totalbelanja;
 
 				//menyimpan data ke dalam tabel pembelian
-				$koneksi->query("INSERT INTO pembelian (email_pelanggan,id_ongkir,tanggal_pembelian,total_pembelian,
-					nama_pulau,tarif,alamat_pengiriman) VALUES ('$email_pelanggan','$id_ongkir','$tanggal_pembelian',
-					'$total_pembelian','$nama_pulau','$tarif','$alamat_pengiriman')");
+				$koneksi->query("INSERT INTO pembelian (email_pelanggan,id_jamsul,tanggal_pembelian,total_pembelian,
+					tgl_penyusulan,jam_penyusulan,alamat_penyusulan) VALUES ('$email_pelanggan','$id_jamsul','$tanggal_pembelian',
+					'$total_pembelian','$tgl_penyusulan','$jam_penyusulan','$alamat_penyusulan')");
 
 				//mendapatkan id_pembelian yang barusan terjadi
 				$id_pembelian_barusan = $koneksi->insert_id;
@@ -232,14 +240,11 @@ $jum = mysqli_num_rows($data);
 
 					$nama = $produk['nama_produk'];
 					$harga = $produk['harga_produk'];
-					$berat = $produk['berat_produk'];
 
-					$subberat = $produk['berat_produk']*$jumlah;
 					$subharga = $produk['harga_produk']*$jumlah;
 
-					$koneksi->query("INSERT INTO pembelian_produk (id_pembelian, id_produk, nama, harga, berat, subberat, 
-						subharga, jumlah) VALUES ('$id_pembelian_barusan','$id_produk','$nama','$harga','$berat',
-						'$subberat','$subharga','$jumlah')");
+					$koneksi->query("INSERT INTO pembelian_produk (id_pembelian, id_produk, nama, harga, subharga, jumlah) 
+						VALUES ('$id_pembelian_barusan','$id_produk','$nama','$harga','$subharga','$jumlah')");
 
 					//update stok
 					$koneksi->query("UPDATE produk SET stok_produk=stok_produk - $jumlah WHERE id_produk='$id_produk'");

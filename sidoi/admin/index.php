@@ -60,7 +60,7 @@ if (!isset($_SESSION["pelanggan"])) {
                     <a href="index.php?halaman=umpanbalik"></i>Umpan Balik</a>
                 </li>
                 <li>
-                    <a href="index.php?halaman=jamsul"></i>Jam Penyusulan</a>
+                    <a href="index.php?halaman=jamsul"></i>Penjemputan</a>
                 </li>
                 <li>
                     <a href="index.php?halaman=komentar"></i>Komentar</a>
