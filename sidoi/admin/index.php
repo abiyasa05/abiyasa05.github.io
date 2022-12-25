@@ -60,7 +60,7 @@ if (!isset($_SESSION["pelanggan"])) {
                     <a href="index.php?halaman=umpanbalik"></i>Umpan Balik</a>
                 </li>
                 <li>
-                    <a href="index.php?halaman=ongkir"></i>Ongkir</a>
+                    <a href="index.php?halaman=jamsul"></i>Jam Penyusulan</a>
                 </li>
                 <li>
                     <a href="index.php?halaman=komentar"></i>Komentar</a>
@@ -122,12 +122,12 @@ if (!isset($_SESSION["pelanggan"])) {
                     include 'umpanbalik.php';
                 } elseif ($_GET["halaman"] == "hapusumpanbalik") {
                     include 'hapusumpanbalik.php';
-                } elseif ($_GET["halaman"] == "ongkir") {
-                    include 'ongkir.php';
-                } elseif ($_GET["halaman"] == "hapusongkir") {
-                    include 'hapusongkir.php';
-                } elseif ($_GET["halaman"] == "tambahongkir") {
-                    include 'tambahongkir.php';
+                } elseif ($_GET["halaman"] == "jamsul") {
+                    include 'jamsul.php';
+                } elseif ($_GET["halaman"] == "hapusjamsul") {
+                    include 'hapusjamsul.php';
+                } elseif ($_GET["halaman"] == "tambahjamsul") {
+                    include 'tambahjamsul.php';
                 } elseif ($_GET["halaman"] == "komentar") {
                     include 'komentar.php';
                 } elseif ($_GET["halaman"] == "hapuskomentar") {
