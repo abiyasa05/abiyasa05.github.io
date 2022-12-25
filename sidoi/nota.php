@@ -2,7 +2,7 @@
 session_start();
 //script koneksi
 include "koneksi.php";
-
+// 
 //jika belum login akan dilarikan ke halaman login
 if (!isset($_SESSION["pelanggan"])) {
  	echo "<script>alert('Silahkan login dulu!');</script>";

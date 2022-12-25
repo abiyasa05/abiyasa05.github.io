@@ -1,6 +1,6 @@
 <h2>Tambah Data Penjemputan</h2>
 <hr color="black">
-<!--  -->
+
 <form method="post" enctype="multipart/form-data">
 	<div class="form-group">
 		<label>Jam Penjemputan</label>

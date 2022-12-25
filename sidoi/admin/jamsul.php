@@ -1,6 +1,6 @@
 <h2>Data Penjemputan</h2>
 <hr color="black">
-<!--  -->
+
 <table class="table table-bordered table-responsive-md">
 	<thead>
 		<tr>
