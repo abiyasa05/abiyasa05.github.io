@@ -159,7 +159,7 @@ $em = $ambil->fetch_assoc();
                         <div class="caption">
                             <h5><?php echo $perproduk['nama_produk'] ?></h5>
                             <h6>Rp. <?php echo number_format($perproduk['harga_produk']) ?></h6>
-                            <a href="detail.php?id=<?php echo $perproduk['id_produk']; ?>" class="btn btn-primary">Detail</a>
+                            <a href="detail_paket.php?id=<?php echo $perproduk['id_produk']; ?>" class="btn btn-primary">Detail</a>
                             <a href="tambahwishlist.php?id=<?php echo $perproduk["id_produk"]; ?>" class="btn btn-primary"><i class="fas fa-bookmark"></i></a>
                             <br><br><br><br>
                         </div>

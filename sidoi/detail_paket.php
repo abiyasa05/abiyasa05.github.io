@@ -1,6 +1,6 @@
 <?php
 session_start();
-//koneksi ke database
+//script koneksi
 include "koneksi.php";
 
 //jika belum login akan dilarikan ke halaman login
@@ -8,6 +8,13 @@ if (!isset($_SESSION["pelanggan"])) {
     echo "<script>alert('Silahkan login dulu!');</script>";
     echo "<script>location='login.php';</script>";
 }
+
+//mendapatkan id produk dari url
+$id_produk = $_GET["id"];
+
+//query ambil data
+$ambil = $koneksi->query("SELECT * FROM produk WHERE id_produk='$id_produk'");
+$detail = $ambil->fetch_assoc();
 ?>
 <?php
 $ambil = $koneksi->query("SELECT * FROM profil");
