@@ -42,7 +42,7 @@ if (!isset($_SESSION["pelanggan"])) {
                     <a href="index.php"></i>Home</a>
                 </li>
                 <li>
-                    <a href="index.php?halaman=produk"></i>Produk</a>
+                    <a href="index.php?halaman=produk"></i>Paket Ziarah</a>
                 </li>
                 <li>
                     <a href="index.php?halaman=panduan_doa"></i>Panduan Doa</a>
@@ -144,6 +144,10 @@ if (!isset($_SESSION["pelanggan"])) {
                     include 'tambahpanduan.php';
                 } elseif ($_GET["halaman"] == "hapuspanduan") {
                     include 'hapuspanduan.php';
+                } elseif ($_GET["halaman"] == "tambahpaket") {
+                    include 'tambahpaket.php';
+                } elseif ($_GET["halaman"] == "ubahpaket") {
+                    include 'ubahpaket.php';
                 }
             } else {
                 include 'home.php';

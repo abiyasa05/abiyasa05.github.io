@@ -153,13 +153,16 @@ $em = $ambil->fetch_assoc();
 
             <?php $ambil = $koneksi->query("SELECT * FROM produk"); ?>
             <?php while ($perproduk = $ambil->fetch_assoc()) { ?>
-                <div class="col-md-3 mb-5">
-                    <img class="img-fluid img-thumbnail" src="foto_produk/<?php echo $perproduk['foto_produk'] ?>">
-                    <div class="caption">
-                        <h5><?php echo $perproduk['nama_produk'] ?></h5>
-                        <h6>Rp. <?php echo number_format($perproduk['harga_produk']) ?></h6>
-                        <a href="detail.php?id=<?php echo $perproduk['id_produk']; ?>" class="btn btn-primary">Detail</a>
-                        <a href="tambahwishlist.php?id=<?php echo $perproduk["id_produk"]; ?>" class="btn btn-primary"><i class="fas fa-bookmark"></i></a>
+                <div class="col-md-3 mb-3">
+                    <div class="panel-body" style="text-align : center; overflow: hidden; padding: 0;">
+                        <img style="max-height: 170px;" class="img-fluid img-thumbnail" src="foto_produk/<?php echo $perproduk['foto_produk'] ?>">
+                        <div class="caption">
+                            <h5><?php echo $perproduk['nama_produk'] ?></h5>
+                            <h6>Rp. <?php echo number_format($perproduk['harga_produk']) ?></h6>
+                            <a href="detail.php?id=<?php echo $perproduk['id_produk']; ?>" class="btn btn-primary">Detail</a>
+                            <a href="tambahwishlist.php?id=<?php echo $perproduk["id_produk"]; ?>" class="btn btn-primary"><i class="fas fa-bookmark"></i></a>
+                            <br><br><br><br>
+                        </div>
                     </div>
                 </div>
             <?php } ?>
