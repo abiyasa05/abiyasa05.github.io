@@ -148,6 +148,8 @@ if (!isset($_SESSION["pelanggan"])) {
                     include 'tambahpaket.php';
                 } elseif ($_GET["halaman"] == "ubahpaket") {
                     include 'ubahpaket.php';
+                } elseif ($_GET["halaman"] == "hapuspaket") {
+                    include 'hapuspaket.php';
                 }
             } else {
                 include 'home.php';
