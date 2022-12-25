@@ -9,5 +9,5 @@
 
 	$koneksi->query("DELETE FROM wishlist WHERE email_pelanggan='$email_pelanggan' AND id_produk='$_GET[id]'");
 
-	echo "<script>location='index.php';</script>"
+	echo "<script>location='wishlist.php';</script>"
 ?>

@@ -21,7 +21,7 @@ $jum = mysqli_num_rows($data);
 
 if ($jum == 0) {
 	echo "<script>alert('Anda belum memasukkan produk ke dalam keranjang!');</script>";
-	echo "<script>location='index.php';</script>";
+	echo "<script>location='index2.php';</script>";
 }
 ?>
 
@@ -51,16 +51,14 @@ if ($jum == 0) {
 <body>
 	<!--Navbar -->
 	<nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="index.php">SI - DO'I</a>
+		<a class="navbar-brand" href="index2.php">SI - DO'I</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent-333">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
-					<a class="nav-link active" href="index.php">Tour Builder
-						<span class="sr-only">(current)</span>
-					</a>
+					<a class="nav-link" href="index2.php">Tour Builder</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="paket_ziarah.php">Paket Ziarah</a>
@@ -82,7 +80,7 @@ if ($jum == 0) {
 				</a>
 			</ul>
 			<ul class="navbar-nav mr-2">
-				<a class="nav-link" href="keranjang.php">
+				<a class="nav-link active" href="keranjang.php">
 					<i class="fas fa-shopping-cart"></i>
 				</a>
 			</ul>

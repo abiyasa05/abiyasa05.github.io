@@ -3,11 +3,6 @@ session_start();
 //koneksi ke database
 include "koneksi.php";
 
-//jika belum login akan dilarikan ke halaman login
-if (!isset($_SESSION["pelanggan"])) {
-    echo "<script>alert('Silahkan login dulu!');</script>";
-    echo "<script>location='login.php';</script>";
-}
 ?>
 <?php
 $ambil = $koneksi->query("SELECT * FROM profil");
@@ -59,7 +54,7 @@ $em = $ambil->fetch_assoc();
         }
     </style>
 
-    <title>SI - DO'I Panduan Doa</title>
+    <title>SI - DO'I Paket Ziarah</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -77,55 +72,38 @@ $em = $ambil->fetch_assoc();
 
 <body>
     <!--Navbar -->
-    <nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index2.php">SI - DO'I</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index2.php">Tour Builder</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="paket_ziarah.php">Paket Ziarah</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="panduan_doa.php">Panduan Doa
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="history_pesanan.php">History Pesanan</a>
-                </li>
-            </ul>
-            <form action="pencarian.php" method="get" class="form-inline my-2 my-lg-0 mr-5">
-                <input class="form-control mr-sm-2" type="search" name="keyword" placeholder="Pencarian" aria-label="Search">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Cari</button>
-            </form>
-            <ul class="navbar-nav mr-2">
-                <a class="nav-link" href="wishlist.php">
-                    <i class="fas fa-bookmark"></i>
-                </a>
-            </ul>
-            <ul class="navbar-nav mr-2">
-                <a class="nav-link" href="keranjang.php">
-                    <i class="fas fa-shopping-cart"></i>
-                </a>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <?php echo $_SESSION["pelanggan"]["nama_pelanggan"] ?></a>
-                    <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-                        <a class="dropdown-item" href="profil.php?email=<?php echo $_SESSION["pelanggan"]["email_pelanggan"]; ?>">Profil</a>
-                        <a class="dropdown-item" href="logout.php">Logout</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!--/.Navbar -->
+	<nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="index.php">SI - DO'I</a>
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+	    aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item">
+	        <a class="nav-link" href="index.php">Tour Builder</a>
+	      </li>
+		  <li class="nav-item">
+	        <a class="nav-link active" href="paket_ziarah2.php">Paket Ziarah
+                <span class="sr-only">(current)</span>
+            </a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="login.php">Panduan Doa</a>
+	      </li>
+	    </ul>
+	    <form action="pencarian2.php" method="get" class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="search" name="keyword" placeholder="Pencarian" aria-label="Search">
+	      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Cari</button>
+	    </form>
+	    <ul class="navbar-nav ml-5">
+	        <a href="login.php" class="btn btn-outline-light waves-effect btn-md">
+	        	<i class="fas fa-sign-in-alt mr-2" aria-hidden="true"></i>Login
+	        </a>
+	    </ul>
+	  </div>
+	</nav>
+	<!--/.Navbar -->
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
@@ -144,76 +122,31 @@ $em = $ambil->fetch_assoc();
     <!-- /javascript-->
 
     <!-- konten -->
-    <section class="riwayat">
-        <div class="container" style="margin-bottom: 50px;">
-            <h2 style="margin-top: 35px;">Panduan Doa</h2>
+    <div class="container" style="margin-bottom: 50px;">
+        <h2 style="margin-top: 35px;">Paket Ziarah</h2>
 
-            <hr color="black">
+        <hr color="black">
 
-            <table class="table table-bordered table-responsive-md">
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>Judul Buku</th>
-                        <th>Ekstensi</th>
-                        <th>Size</th>
-                        <th>Opsi</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                    function koneksiDB()
-                    {
+        <div class="row">
 
-                        $host = "localhost";
-                        $username = "root";
-                        $password = "";
-                        $db = "toko";
+            <?php $ambil = $koneksi->query("SELECT * FROM produk"); ?>
+            <?php while ($perproduk = $ambil->fetch_assoc()) { ?>
+                <div class="col-md-3 mb-3">
+                    <div class="panel-body" style="text-align : center; overflow: hidden; padding: 0;">
+                        <img style="max-height: 170px;" class="img-fluid img-thumbnail" src="foto_produk/<?php echo $perproduk['foto_produk'] ?>">
+                        <div class="caption">
+                            <h5><?php echo $perproduk['nama_produk'] ?></h5>
+                            <h6>Rp. <?php echo number_format($perproduk['harga_produk']) ?></h6>
+                            <a href="login.php" class="btn btn-primary">Detail</a>
+                            <a href="login.php" class="btn btn-primary"><i class="fas fa-bookmark"></i></a>
+                            <br><br><br><br>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
 
-                        $conn = mysqli_connect($host, $username, $password, $db);
-
-                        if (!$conn) {
-                            die("Koneksi Database Gagal : " . mysqli_connect_error());
-                        } else {
-                            return $conn;
-                        }
-                    }
-                    function selectAllData()
-                    {
-                        $query = "SELECT * FROM panduan";
-                        $result = mysqli_query(koneksiDB(), $query);
-                        return $result;
-                    }
-                    $nomor_urut = 0;
-                    $result = selectAllData();
-                    $countData = mysqli_num_rows($result);
-
-                    if ($countData < 1) {
-                    ?>
-                        <tr>
-                            <td colspan="5" style="text-align: center; font-weight: bold; font-size: 12px; padding: 5px; color: red">TIDAK ADA DATA</td>
-                        </tr>
-
-                        <?php
-                    } else {
-                        while ($row = mysqli_fetch_assoc($result)) {
-                            $nomor_urut = $nomor_urut + 1;
-                        ?>
-                            <tr>
-                                <td><?php echo $nomor_urut; ?></td>
-                                <td><?php echo $row['nama_buku']; ?></td>
-                                <td><?php echo strtoupper($row['ekstensi']) ?></td>
-                                <td><?php echo number_format($row['size'] / (1024 * 1024), 2) ?>MB</td>
-                                <td><a href="./admin/downloadpanduan.php?url=<?php echo $row['berkas']; ?>" class="btn btn-primary">Download</a></td>
-                            </tr>
-                    <?php
-                        }
-                    }
-                    ?>
-                </tbody>
-            </table>
         </div>
-    </section>
+    </div>
     <!-- /konten -->
 
     <!-- Footer -->

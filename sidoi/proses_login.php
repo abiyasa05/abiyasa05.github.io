@@ -24,7 +24,7 @@ if ($cek>0) {
 		$_SESSION['pelanggan']=$data;
 		$_SESSION['level']="user";
 
-		header("location:index.php");
+		header("location:index2.php");
 	}else{
 		?>
 		<script>

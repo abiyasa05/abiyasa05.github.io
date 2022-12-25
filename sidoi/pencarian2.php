@@ -40,51 +40,32 @@ while ($pecah = $ambil->fetch_assoc()) {
 	<!--Navbar -->
 	<nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-dark">
 		<a class="navbar-brand" href="index.php">SI - DO'I</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent-333">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link active" href="index.php">Tour Builder
-						<span class="sr-only">(current)</span>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="paket_ziarah.php">Paket Ziarah</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="panduan_doa.php">Panduan Doa</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="history_pesanan.php">History Pesanan</a>
-				</li>
-			</ul>
-			<form action="pencarian.php" method="get" class="form-inline my-2 my-lg-0 mr-5">
-				<input class="form-control mr-sm-2" type="search" name="keyword" placeholder="Pencarian" aria-label="Search">
-				<button class="btn btn-outline-light my-2 my-sm-0" type="submit">Cari</button>
-			</form>
-			<ul class="navbar-nav mr-2">
-				<a class="nav-link" href="wishlist.php">
-					<i class="fas fa-bookmark"></i>
-				</a>
-			</ul>
-			<ul class="navbar-nav mr-2">
-				<a class="nav-link" href="keranjang.php">
-					<i class="fas fa-shopping-cart"></i>
-				</a>
-			</ul>
-			<ul class="navbar-nav">
-				<li class="nav-item dropdown">
-					<a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<?php echo $_SESSION["pelanggan"]["nama_pelanggan"] ?></a>
-					<div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-						<a class="dropdown-item" href="profil.php?email=<?php echo $_SESSION["pelanggan"]["email_pelanggan"]; ?>">Profil</a>
-						<a class="dropdown-item" href="logout.php">Logout</a>
-					</div>
-				</li>
-			</ul>
-		</div>
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+	    aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item">
+	        <a class="nav-link" href="index.php">Tour Builder</a>
+	      </li>
+		  <li class="nav-item">
+	        <a class="nav-link" href="paket_ziarah2.php">Paket Ziarah</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="login.php">Panduan Doa</a>
+	      </li>
+	    </ul>
+	    <form action="pencarian2.php" method="get" class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="search" name="keyword" placeholder="Pencarian" aria-label="Search">
+	      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Cari</button>
+	    </form>
+	    <ul class="navbar-nav ml-5">
+	        <a href="login.php" class="btn btn-outline-light waves-effect btn-md">
+	        	<i class="fas fa-sign-in-alt mr-2" aria-hidden="true"></i>Login
+	        </a>
+	    </ul>
+	  </div>
 	</nav>
 	<!--/.Navbar -->
 
@@ -123,7 +104,7 @@ while ($pecah = $ambil->fetch_assoc()) {
 					<div class="caption">
 						<h5><?php echo $value['nama_produk'] ?></h5>
 						<h6>Rp. <?php echo number_format($value['harga_produk']) ?></h6>
-						<a href="detail2.php?id=<?php echo $value['id_produk']; ?>" class="btn btn-primary">Detail</a>
+						<a href="login.php" class="btn btn-primary">Detail</a>
 					</div>
 				</div>
 

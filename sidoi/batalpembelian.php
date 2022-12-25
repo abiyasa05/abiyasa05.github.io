@@ -8,5 +8,5 @@
     //update data pembelian menjadi batal
     $koneksi->query("UPDATE pembelian SET status_pembelian='batal' WHERE id_pembelian='$_GET[id]'");
 
-    echo "<script>location='riwayat.php';</script>";
+    echo "<script>location='riwayat_pesanan.php';</script>";
 ?>
