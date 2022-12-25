@@ -25,7 +25,7 @@ $pecah = $ambil->fetch_assoc();
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>Ez Game - Profil</title>
+	<title>SI -DO'I - Profil</title>
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -43,23 +43,25 @@ $pecah = $ambil->fetch_assoc();
 <body>
 	<!--Navbar -->
 	<nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="index.php">Ez Game</a>
+		<a class="navbar-brand" href="index.php">SI - DO'I</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent-333">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="index.php">Home</a>
+					<a class="nav-link active" href="index.php">Tour Builder
+						<span class="sr-only">(current)</span>
+					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="checkout.php">Checkout</a>
+					<a class="nav-link" href="paket_ziarah.php">Paket Ziarah</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="feedback.php">Feedback</a>
+					<a class="nav-link" href="panduan_doa.php">Panduan Doa</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="riwayat.php">Riwayat Belanja</a>
+					<a class="nav-link" href="history_pesanan.php">History Pesanan</a>
 				</li>
 			</ul>
 			<form action="pencarian.php" method="get" class="form-inline my-2 my-lg-0 mr-5">
@@ -138,7 +140,13 @@ $pecah = $ambil->fetch_assoc();
 			<div class="row">
 
 				<!-- Grid column -->
-				<div class="col-md-4 mx-auto">
+				<div class="col-md-3">
+					<!-- Content -->
+					<img class="img-fluid img-thumbnail" src="images/sidoi.jpeg">
+				</div>
+
+				<!-- Grid column -->
+				<div class="col-md-3 mx-auto">
 
 					<!-- Content -->
 					<h5 class="font-weight-bold mt-3 mb-4">Tentang Kami</h5>
@@ -146,8 +154,8 @@ $pecah = $ambil->fetch_assoc();
 					<hr color="white">
 
 					<p>
-						Ez Game merupakan web toko online yang menjual dvd game play station 4. Kami membuat web ini
-						agar orang - orang tidak kesulitan untuk membeli dvd game.
+						Aplikasi “Si-Do'i” (Solusi Dolan Islami) merupakan sebuah aplikasi yang berguna untuk memudahkan
+						peziarah dalam melakukan ziarah wali songo.
 					</p>
 
 				</div>
@@ -168,7 +176,7 @@ $pecah = $ambil->fetch_assoc();
 							<i class="fas fa-home mr-3"></i> Malang, Indonesia
 						</p>
 						<p>
-							<i class="fas fa-envelope mr-3"></i> ezgame@gmail.com
+							<i class="fas fa-envelope mr-3"></i> sido'i@gmail.com
 						</p>
 						<p>
 							<i class="fas fa-phone mr-3"></i> +6282-301-329-134
@@ -215,6 +223,19 @@ $pecah = $ambil->fetch_assoc();
 				</div>
 				<!-- Grid column -->
 
+				<!-- Grid column -->
+				<div class="col-md-3">
+
+					<!-- Content -->
+					<h5 class="font-weight-bold mt-3 mb-4">Partner Pembayaran</h5>
+					<hr color="white">
+
+					<img class="img-fluid img-thumbnail" width="60" height="60" src="images/bri.png">
+					<img class="img-fluid img-thumbnail" width="70" height="70" src="images/bca.png">
+					<img class="img-fluid img-thumbnail" width="90" height="90" src="images/mandiri.png">
+
+				</div>
+
 			</div>
 			<!-- Grid row -->
 
@@ -228,7 +249,7 @@ $pecah = $ambil->fetch_assoc();
 			<div class="row">
 				<div class="col-md-12">
 					<div class="text-center mb-3">
-						&copy; 2019 Ez Game. All Rights Reserved.
+						&copy; Copyright 2022 Si-Do'i. All rights reserved.
 					</div>
 				</div>
 			</div>
