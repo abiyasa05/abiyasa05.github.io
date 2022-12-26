@@ -2,12 +2,6 @@
 session_start();
 //koneksi ke database
 include "koneksi.php";
-
-//jika belum login akan dilarikan ke halaman login
-if (!isset($_SESSION["pelanggan"])) {
-    echo "<script>alert('Silahkan login dulu!');</script>";
-    echo "<script>location='login.php';</script>";
-}
 ?>
 <?php
 $ambil = $koneksi->query("SELECT * FROM profil");
@@ -78,7 +72,7 @@ $em = $ambil->fetch_assoc();
 <body>
     <!--Navbar -->
     <nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="tour_builder.php">SI - DO'I</a>
+        <a class="navbar-brand" href="index.php">SI - DO'I</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -90,38 +84,20 @@ $em = $ambil->fetch_assoc();
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="paket_ziarah.php">Paket Ziarah</a>
+                    <a class="nav-link" href="paket_ziarah2.php">Paket Ziarah</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="panduan_doa.php">Panduan Doa</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="history_pesanan.php">History Pesanan</a>
+                    <a class="nav-link" href="login.php">Panduan Doa</a>
                 </li>
             </ul>
-            <form action="pencarian.php" method="get" class="form-inline my-2 my-lg-0 mr-5">
+            <form action="pencarian2.php" method="get" class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" name="keyword" placeholder="Pencarian" aria-label="Search">
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Cari</button>
             </form>
-            <ul class="navbar-nav mr-2">
-                <a class="nav-link" href="wishlist.php">
-                    <i class="fas fa-bookmark"></i>
+            <ul class="navbar-nav ml-5">
+                <a href="login.php" class="btn btn-outline-light waves-effect btn-md">
+                    <i class="fas fa-sign-in-alt mr-2" aria-hidden="true"></i>Login
                 </a>
-            </ul>
-            <ul class="navbar-nav mr-2">
-                <a class="nav-link" href="keranjang.php">
-                    <i class="fas fa-shopping-cart"></i>
-                </a>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <?php echo $_SESSION["pelanggan"]["nama_pelanggan"] ?></a>
-                    <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-                        <a class="dropdown-item" href="profil.php?email=<?php echo $_SESSION["pelanggan"]["email_pelanggan"]; ?>">Profil</a>
-                        <a class="dropdown-item" href="logout.php">Logout</a>
-                    </div>
-                </li>
             </ul>
         </div>
     </nav>

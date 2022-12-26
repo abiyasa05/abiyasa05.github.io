@@ -79,8 +79,7 @@ $em = $ambil->fetch_assoc();
 	<!--Navbar -->
 	<nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-dark">
 		<a class="navbar-brand" href="index2.php">SI - DO'I</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" 
-		aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent-333">
@@ -196,26 +195,26 @@ $em = $ambil->fetch_assoc();
 				<div class="carousel-item active">
 					<div class="cards-wrapper">
 						<div class="card">
-							<img src="images/sunankali.jpg" class="card-img-top" alt="...">
+							<img src="images/jatim.png" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5 class="card-title">Paket Jawa Timur</h5>
+								<p class="card-text">Dikenal dengan wali limo yakni Sunan Ampel Surabaya, Sunan Giri,Sunan Maulana Malik Ibrahim, Sunan Drajat Lamongan dan Sunan Bonang Tuban.</p>
 								<a href="#" class="btn btn-primary">Go somewhere</a>
 							</div>
 						</div>
 						<div class="card d-none d-md-block">
-							<img src="images/sunankali.jpg" class="card-img-top" alt="...">
+							<img src="images/jabar.png" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5 class="card-title">Paket Jawa Barat</h5>
+								<p class="card-text">Paket Jawa Barat terdapat satu wali yaitu Sunan Gunung Jati yang terletak di Cirebon Jawa Barat.</p>
 								<a href="#" class="btn btn-primary">Go somewhere</a>
 							</div>
 						</div>
 						<div class="card d-none d-md-block">
-							<img src="images/sunankali.jpg" class="card-img-top" alt="...">
+							<img src="images/JATENG.png" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5 class="card-title">Paket Jawa Tengah</h5>
+								<p class="card-text">Dikenal dengan wali telu yakni Sunan Muria Kudus , Sunan Kudus Kudus Jawa Tengah, dan Sunan Kalijaga Demak.</p>
 								<a href="#" class="btn btn-primary">Go somewhere</a>
 							</div>
 						</div>
@@ -224,26 +223,26 @@ $em = $ambil->fetch_assoc();
 				<div class="carousel-item">
 					<div class="cards-wrapper">
 						<div class="card">
-							<img src="images/sunankali.jpg" class="card-img-top" alt="...">
+							<img src="images/PETA PONOROGO.jpeg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5 class="card-title">Paket Makam Ponorogo</h5>
+								<p class="card-text">Terdiri dari 3 makam wali yaitu Makam Kyai Ageng Hasan Besari, Makam Bathoro Khatong, Makam Astana Srandil</p>
 								<a href="#" class="btn btn-primary">Go somewhere</a>
 							</div>
 						</div>
 						<div class="card d-none d-md-block">
-							<img src="images/sunankali.jpg" class="card-img-top" alt="...">
+							<img src="images/PETA SOLO.jpeg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5 class="card-title">Paket Makam Solo</h5>
+								<p class="card-text">Terdiri atas makam Habib Alwi bin Ali Al-Habsyi, Kiai Ageng Henis Laweyan, Makam Kiai Muhammad bin Sulaiman bin Zakariya.</p>
 								<a href="#" class="btn btn-primary">Go somewhere</a>
 							</div>
 						</div>
 						<div class="card d-none d-md-block">
-							<img src="images/sunankali.jpg" class="card-img-top" alt="...">
+							<img src="images/PETA MALANG.jpeg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5 class="card-title">Paket Makam Malang</h5>
+								<p class="card-text">Terdiri dari 4 makam wali yaitu Makam Kyai Ageng Gribig, Makam Mbah Ageng Sembeodjo, Makam Mbah Patok Galih, Makam Mbah Honggo</p>
 								<a href="#" class="btn btn-primary">Go somewhere</a>
 							</div>
 						</div>
@@ -252,26 +251,26 @@ $em = $ambil->fetch_assoc();
 				<div class="carousel-item">
 					<div class="cards-wrapper">
 						<div class="card">
-							<img src="images/sunankali.jpg" class="card-img-top" alt="...">
+							<img src="images/PETA JOMBANG.jpeg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5 class="card-title">Paket Makam Jombang</h5>
+								<p class="card-text">Terdapat Makam KH Abdul Wahab Chasbullah, Makam KH Bisri Syansuri, Makam Sayyid Sulaiman.</p>
 								<a href="#" class="btn btn-primary">Go somewhere</a>
 							</div>
 						</div>
 						<div class="card d-none d-md-block">
-							<img src="images/sunankali.jpg" class="card-img-top" alt="...">
+							<img src="images/PETA SEMARANG.png" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5 class="card-title">Paket Makam Semarang</h5>
+								<p class="card-text">Terdapat Makam Ki Ageng Pandanaran,Makam Ki Ageng Galang Sewu, Makam Kiai Haji Sholeh Darat. </p>
 								<a href="#" class="btn btn-primary">Go somewhere</a>
 							</div>
 						</div>
 						<div class="card d-none d-md-block">
-							<img src="images/sunankali.jpg" class="card-img-top" alt="...">
+							<img src="images/MADURA.jpeg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5 class="card-title">Paket Makam Madura</h5>
+								<p class="card-text">Terdapat Makam Syaikhona Kholil Bangkalan, Makam Raden Abdul Kadirun.</p>
 								<a href="#" class="btn btn-primary">Go somewhere</a>
 							</div>
 						</div>
@@ -299,26 +298,26 @@ $em = $ambil->fetch_assoc();
 				<div class="carousel-item active">
 					<div class="cards-wrapper">
 						<div class="card">
-							<img src="images/sunankali.jpg" class="card-img-top" alt="...">
+							<img src="images/ziarah.jpeg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
+								<p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
 								<a href="#" class="btn btn-primary">Go somewhere</a>
 							</div>
 						</div>
 						<div class="card d-none d-md-block">
-							<img src="images/sunankali.jpg" class="card-img-top" alt="...">
+							<img src="images/ziarah3.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
+								<p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
 								<a href="#" class="btn btn-primary">Go somewhere</a>
 							</div>
 						</div>
 						<div class="card d-none d-md-block">
-							<img src="images/sunankali.jpg" class="card-img-top" alt="...">
+							<img src="images/ziarah4.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
+								<p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
 								<a href="#" class="btn btn-primary">Go somewhere</a>
 							</div>
 						</div>
@@ -327,26 +326,26 @@ $em = $ambil->fetch_assoc();
 				<div class="carousel-item">
 					<div class="cards-wrapper">
 						<div class="card">
-							<img src="images/sunankali.jpg" class="card-img-top" alt="...">
+							<img src="images/ziarah2.png" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
+								<p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
 								<a href="#" class="btn btn-primary">Go somewhere</a>
 							</div>
 						</div>
 						<div class="card d-none d-md-block">
-							<img src="images/sunankali.jpg" class="card-img-top" alt="...">
+							<img src="images/ziarah1.jpeg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
+								<p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
 								<a href="#" class="btn btn-primary">Go somewhere</a>
 							</div>
 						</div>
 						<div class="card d-none d-md-block">
-							<img src="images/sunankali.jpg" class="card-img-top" alt="...">
+							<img src="images/ziarah5.jpeg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
+								<p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
 								<a href="#" class="btn btn-primary">Go somewhere</a>
 							</div>
 						</div>
@@ -355,26 +354,26 @@ $em = $ambil->fetch_assoc();
 				<div class="carousel-item">
 					<div class="cards-wrapper">
 						<div class="card">
-							<img src="images/sunankali.jpg" class="card-img-top" alt="...">
+							<img src="images/ziarah6.jpeg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
+								<p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
 								<a href="#" class="btn btn-primary">Go somewhere</a>
 							</div>
 						</div>
 						<div class="card d-none d-md-block">
-							<img src="images/sunankali.jpg" class="card-img-top" alt="...">
+							<img src="images/ziarah7.jpeg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
+								<p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
 								<a href="#" class="btn btn-primary">Go somewhere</a>
 							</div>
 						</div>
 						<div class="card d-none d-md-block">
-							<img src="images/sunankali.jpg" class="card-img-top" alt="...">
+							<img src="images/ziarah8.jpeg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
+								<p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
 								<a href="#" class="btn btn-primary">Go somewhere</a>
 							</div>
 						</div>
