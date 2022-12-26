@@ -22,7 +22,7 @@ $email_pelanggan_login = $_SESSION["pelanggan"]["email_pelanggan"];
 
 if ($email_pelanggan_login !== $email_pelanggan_beli) {
   echo "<script>alert('Jangan curang bro!');</script>";
-  echo "<script>location='riwayat.php';</script>";
+  echo "<script>location='history_pesanan.php';</script>";
   exit();
 }
 ?>
