@@ -19,14 +19,14 @@ $detbay = $ambil->fetch_assoc();
 //jika belum ada data pembayaran
 if (empty($detbay)) {
 	echo "<script>alert('Belum ada data pembayaran');</script>";
-	echo "<script>location='riwayat.php';</script>";
+	echo "<script>location='history_pesanan.php';</script>";
 	exit();
 }
 
 //jika data pelanggan yang bayar tidak sama dengan data pelanggan yang login
 if ($_SESSION["pelanggan"]['email_pelanggan'] !== $detbay["email_pelanggan"]) {
 	echo "<script>alert('Anda tidak berhak melihat pembayaran orang lain!');</script>";
-	echo "<script>location='riwayat.php';</script>";
+	echo "<script>location='history_pesanan.php';</script>";
 	exit();
 }
 ?>
@@ -48,7 +48,7 @@ $pecah = $ambil->fetch_assoc();
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>SI - DO'I - Lohat Pembayaran</title>
+	<title>SI - DO'I - Lihat Pembayaran</title>
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
