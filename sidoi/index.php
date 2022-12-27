@@ -175,7 +175,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Paket Jawa Timur</h5>
                                 <p class="card-text">Dikenal dengan wali limo yakni Sunan Ampel Surabaya, Sunan Giri,Sunan Maulana Malik Ibrahim, Sunan Drajat Lamongan dan Sunan Bonang Tuban.</p>
-                                <a href="login.php" class="btn btn-primary">Go somewhere</a>
+                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -183,7 +183,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Paket Jawa Barat</h5>
                                 <p class="card-text">Paket Jawa Barat terdapat satu wali yaitu Sunan Gunung Jati yang terletak di Cirebon Jawa Barat.</p>
-                                <a href="login.php" class="btn btn-primary">Go somewhere</a>
+                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -191,7 +191,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Paket Jawa Tengah</h5>
                                 <p class="card-text">Dikenal dengan wali telu yakni Sunan Muria Kudus , Sunan Kudus Kudus Jawa Tengah, dan Sunan Kalijaga Demak.</p>
-                                <a href="login.php" class="btn btn-primary">Go somewhere</a>
+                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
                             </div>
                         </div>
                     </div>
@@ -203,7 +203,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Paket Makam Ponorogo</h5>
                                 <p class="card-text">Terdiri dari 3 makam wali yaitu Makam Kyai Ageng Hasan Besari, Makam Bathoro Khatong, Makam Astana Srandil</p>
-                                <a href="login.php" class="btn btn-primary">Go somewhere</a>
+                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -211,7 +211,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Paket Makam Solo</h5>
                                 <p class="card-text">Terdiri atas makam Habib Alwi bin Ali Al-Habsyi, Kiai Ageng Henis Laweyan, Makam Kiai Muhammad bin Sulaiman bin Zakariya.</p>
-                                <a href="login.php" class="btn btn-primary">Go somewhere</a>
+                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -219,7 +219,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Paket Makam Malang</h5>
                                 <p class="card-text">Terdiri dari 4 makam wali yaitu Makam Kyai Ageng Gribig, Makam Mbah Ageng Sembeodjo, Makam Mbah Patok Galih, Makam Mbah Honggo</p>
-                                <a href="login.php" class="btn btn-primary">Go somewhere</a>
+                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
                             </div>
                         </div>
                     </div>
@@ -231,7 +231,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Paket Makam Jombang</h5>
                                 <p class="card-text">Terdapat Makam KH Abdul Wahab Chasbullah, Makam KH Bisri Syansuri, Makam Sayyid Sulaiman.</p>
-                                <a href="login.php" class="btn btn-primary">Go somewhere</a>
+                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -239,7 +239,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Paket Makam Semarang</h5>
                                 <p class="card-text">Terdapat Makam Ki Ageng Pandanaran,Makam Ki Ageng Galang Sewu, Makam Kiai Haji Sholeh Darat. </p>
-                                <a href="login.php" class="btn btn-primary">Go somewhere</a>
+                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -247,7 +247,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Paket Makam Madura</h5>
                                 <p class="card-text">Terdapat Makam Syaikhona Kholil Bangkalan, Makam Raden Abdul Kadirun.</p>
-                                <a href="login.php" class="btn btn-primary">Go somewhere</a>
+                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
                             </div>
                         </div>
                     </div>
@@ -278,7 +278,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
                                 <p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
-                                <a href="login.php" class="btn btn-primary">Go somewhere</a>
+                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -286,7 +286,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
                                 <p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
-                                <a href="login.php" class="btn btn-primary">Go somewhere</a>
+                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -294,7 +294,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
                                 <p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
-                                <a href="login.php" class="btn btn-primary">Go somewhere</a>
+                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
                             </div>
                         </div>
                     </div>
@@ -306,7 +306,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
                                 <p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
-                                <a href="login.php" class="btn btn-primary">Go somewhere</a>
+                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -314,7 +314,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
                                 <p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
-                                <a href="login.php" class="btn btn-primary">Go somewhere</a>
+                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -322,7 +322,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
                                 <p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
-                                <a href="login.php" class="btn btn-primary">Go somewhere</a>
+                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
                             </div>
                         </div>
                     </div>
@@ -334,7 +334,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
                                 <p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
-                                <a href="login.php" class="btn btn-primary">Go somewhere</a>
+                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -342,7 +342,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
                                 <p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
-                                <a href="login.php" class="btn btn-primary">Go somewhere</a>
+                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -350,7 +350,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
                                 <p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
-                                <a href="login.php" class="btn btn-primary">Go somewhere</a>
+                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
                             </div>
                         </div>
                     </div>
