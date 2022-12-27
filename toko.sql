@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 25 Des 2022 pada 10.59
--- Versi server: 10.4.10-MariaDB
--- Versi PHP: 7.3.12
+-- Waktu pembuatan: 27 Des 2022 pada 13.26
+-- Versi server: 10.4.8-MariaDB
+-- Versi PHP: 7.3.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -155,6 +155,7 @@ CREATE TABLE `pembelian` (
   `total_pembelian` int(11) NOT NULL,
   `tgl_penyusulan` date NOT NULL,
   `jam_penyusulan` time NOT NULL,
+  `tujuan_awal` varchar(100) NOT NULL,
   `alamat_penyusulan` text NOT NULL,
   `status_pembelian` varchar(100) NOT NULL DEFAULT 'pending',
   `resi_pengiriman` varchar(50) NOT NULL
@@ -164,14 +165,15 @@ CREATE TABLE `pembelian` (
 -- Dumping data untuk tabel `pembelian`
 --
 
-INSERT INTO `pembelian` (`id_pembelian`, `email_pelanggan`, `id_jamsul`, `tanggal_pembelian`, `total_pembelian`, `tgl_penyusulan`, `jam_penyusulan`, `alamat_penyusulan`, `status_pembelian`, `resi_pengiriman`) VALUES
-(15, 'falendika@gmail.com', 1, '2019-10-05', 860000, '0000-00-00', '00:00:00', '', 'barang dikirim', 'Anjay'),
-(22, 'falendika@gmail.com', 0, '2019-10-08', 400000, '0000-00-00', '00:00:00', 'efegeg', 'sudah kirim pembayaran', ''),
-(23, 'falendika@gmail.com', 1, '2019-10-08', 410000, '0000-00-00', '00:00:00', 'ohwobweo', 'pending', ''),
-(26, 'falendika@gmail.com', 2, '2019-10-08', 420000, '0000-00-00', '00:00:00', 'klo', 'pending', ''),
-(34, 'falendika@gmail.com', 1, '2019-10-20', 860000, '0000-00-00', '00:00:00', 'anjay', 'batal', ''),
-(36, 'falendika@gmail.com', 1, '2022-06-04', 410000, '0000-00-00', '00:00:00', 'Malang', 'barang dikirim', '12345'),
-(37, 'falendika@gmail.com', 2, '2022-12-25', 250000, '2022-12-28', '10:00:00', 'Jl. Malang', 'pending', '');
+INSERT INTO `pembelian` (`id_pembelian`, `email_pelanggan`, `id_jamsul`, `tanggal_pembelian`, `total_pembelian`, `tgl_penyusulan`, `jam_penyusulan`, `tujuan_awal`, `alamat_penyusulan`, `status_pembelian`, `resi_pengiriman`) VALUES
+(15, 'falendika@gmail.com', 1, '2019-10-05', 860000, '0000-00-00', '00:00:00', '', '', 'barang dikirim', 'Anjay'),
+(22, 'falendika@gmail.com', 0, '2019-10-08', 400000, '0000-00-00', '00:00:00', '', 'efegeg', 'sudah kirim pembayaran', ''),
+(23, 'falendika@gmail.com', 1, '2019-10-08', 410000, '0000-00-00', '00:00:00', '', 'ohwobweo', 'pending', ''),
+(26, 'falendika@gmail.com', 2, '2019-10-08', 420000, '0000-00-00', '00:00:00', '', 'klo', 'pending', ''),
+(34, 'falendika@gmail.com', 1, '2019-10-20', 860000, '0000-00-00', '00:00:00', '', 'anjay', 'batal', ''),
+(36, 'falendika@gmail.com', 1, '2022-06-04', 410000, '0000-00-00', '00:00:00', '', 'Malang', 'barang dikirim', '12345'),
+(37, 'falendika@gmail.com', 2, '2022-12-25', 250000, '2022-12-28', '10:00:00', '', 'Jl. Malang', 'pending', ''),
+(38, 'falendika@gmail.com', 0, '2022-12-27', 2500000, '0000-00-00', '00:00:00', 'Dinoyo', 'Jl. Malang', 'pending', '');
 
 -- --------------------------------------------------------
 
@@ -202,7 +204,8 @@ INSERT INTO `pembelian_produk` (`id_pembelian_produk`, `id_pembelian`, `id_produ
 (44, 34, 5, 1, 'PS4 Titanfall 2', 400000, 400000),
 (45, 34, 8, 1, 'PS4 Watch Dogs 2', 450000, 450000),
 (48, 36, 5, 1, 'PS4 Titanfall 2', 400000, 400000),
-(49, 37, 13, 1, 'Paket Bandung', 250000, 250000);
+(49, 37, 13, 1, 'Paket Bandung', 250000, 250000),
+(50, 38, 13, 10, 'Paket Bandung', 250000, 2500000);
 
 -- --------------------------------------------------------
 
@@ -216,17 +219,17 @@ CREATE TABLE `produk` (
   `harga_produk` int(11) NOT NULL,
   `foto_produk` varchar(100) NOT NULL,
   `deskripsi_produk` text NOT NULL,
-  `stok_produk` int(5) NOT NULL
+  `rute_perjalanan` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `produk`
 --
 
-INSERT INTO `produk` (`id_produk`, `nama_produk`, `harga_produk`, `foto_produk`, `deskripsi_produk`, `stok_produk`) VALUES
-(13, 'Paket Bandung', 250000, 'PETA BANDUNG.jpg', 'Di Jawa Barat terdapat satu wali yaitu Sunan Gunung Jati yang terletak di Cirebon Jawa Barat.', 29),
-(14, 'Paket Jombang', 300000, 'PETA JOMBANG.jpeg', 'Di Jawa Barat terdapat satu wali yaitu Sunan Gunung Jati yang terletak di Cirebon Jawa Barat', 20),
-(15, 'Paket Jember', 400000, 'PETA JEMBER.jpeg', 'Di Jawa Barat terdapat satu wali yaitu Sunan Gunung Jati yang terletak di Cirebon Jawa Barat', 10);
+INSERT INTO `produk` (`id_produk`, `nama_produk`, `harga_produk`, `foto_produk`, `deskripsi_produk`, `rute_perjalanan`) VALUES
+(13, 'Paket Bandung', 250000, 'PETA BANDUNG.jpg', 'Di Jawa Barat terdapat satu wali yaitu Sunan Gunung Jati yang terletak di Cirebon Jawa Barat.', 'Singosari, Dinoyo, Klojen'),
+(14, 'Paket Jombang', 300000, 'PETA JOMBANG.jpeg', 'Di Jawa Barat terdapat satu wali yaitu Sunan Gunung Jati yang terletak di Cirebon Jawa Barat', ''),
+(15, 'Paket Jember', 400000, 'PETA JEMBER.jpeg', 'Di Jawa Barat terdapat satu wali yaitu Sunan Gunung Jati yang terletak di Cirebon Jawa Barat', '');
 
 -- --------------------------------------------------------
 
@@ -300,12 +303,6 @@ ALTER TABLE `komentar`
   ADD PRIMARY KEY (`id_komentar`);
 
 --
--- Indeks untuk tabel `panduan`
---
-ALTER TABLE `panduan`
-  ADD PRIMARY KEY (`kode_buku`);
-
---
 -- Indeks untuk tabel `pelanggan`
 --
 ALTER TABLE `pelanggan`
@@ -361,19 +358,13 @@ ALTER TABLE `jamsul`
 -- AUTO_INCREMENT untuk tabel `keranjang`
 --
 ALTER TABLE `keranjang`
-  MODIFY `id_keranjang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id_keranjang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT untuk tabel `komentar`
 --
 ALTER TABLE `komentar`
   MODIFY `id_komentar` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT untuk tabel `panduan`
---
-ALTER TABLE `panduan`
-  MODIFY `kode_buku` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `pembayaran`
@@ -385,13 +376,13 @@ ALTER TABLE `pembayaran`
 -- AUTO_INCREMENT untuk tabel `pembelian`
 --
 ALTER TABLE `pembelian`
-  MODIFY `id_pembelian` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id_pembelian` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT untuk tabel `pembelian_produk`
 --
 ALTER TABLE `pembelian_produk`
-  MODIFY `id_pembelian_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `id_pembelian_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT untuk tabel `produk`
