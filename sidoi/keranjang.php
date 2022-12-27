@@ -123,7 +123,7 @@ if ($jum == 0) {
 						<td>No</td>
 						<td>Produk</td>
 						<td>Harga</td>
-						<td>Jumlah</td>
+						<td>Jumlah Orang</td>
 						<td>Total Harga</td>
 						<td>Aksi</td>
 					</tr>

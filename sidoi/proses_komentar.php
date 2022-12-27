@@ -11,7 +11,7 @@ include "koneksi.php";
 				$hasil=mysqli_query($koneksi,$query);
 				
 				if($hasil){
-					header('location:detail.php?id='.$id_produk);
+					header('location:detail_paket.php?id='.$id_produk);
 				}
 				
 			}

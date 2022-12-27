@@ -16,10 +16,6 @@ $pecah = $ambil->fetch_assoc();
 		<input type="number" name="harga" class="form-control" value="<?php echo $pecah['harga_produk']; ?>">
 	</div>
 	<div class="form-group">
-		<label>Stok</label>
-		<input type="number" name="stok" class="form-control" value="<?php echo $pecah['stok_produk']; ?>">
-	</div>
-	<div class="form-group">
 		<img src="../foto_produk/<?php echo $pecah['foto_produk'] ?>" width="200">
 	</div>
 	<div class="form-group">
@@ -30,7 +26,11 @@ $pecah = $ambil->fetch_assoc();
 		<label>Deskripsi</label>
 		<textarea name="deskripsi" class="form-control" rows="10"><?php echo $pecah['deskripsi_produk']; ?></textarea>
 	</div>
-	<button class="btn btn-primary" name="ubah" onclick="return confirm('Apakah anda yakin ingin mmenyimpan perubahan ini?')">Ubah</button>
+	<div class="form-group">
+		<label>Rute Perjalanan</label>
+		<textarea name="rute" class="form-control" rows="10"><?php echo $pecah['rute_perjalanan']; ?></textarea>
+	</div>
+	<button class="btn btn-primary" name="ubah" onclick="return confirm('Apakah anda yakin ingin menyimpan perubahan ini?')">Ubah</button>
 </form>
 
 <?php
@@ -43,11 +43,11 @@ if (isset($_POST['ubah'])) {
 		move_uploaded_file($lokasifoto, "../foto_produk/$namafoto");
 
 		$koneksi->query("UPDATE produk SET nama_produk='$_POST[nama]',harga_produk='$_POST[harga]',
-				foto_produk='$namafoto',deskripsi_produk='$_POST[deskripsi]',stok_produk='$_POST[stok]'
+				foto_produk='$namafoto',deskripsi_produk='$_POST[deskripsi]',rute_perjalanan='$_POST[rute]'
 				WHERE id_produk='$_GET[id]'");
 	} else {
 		$koneksi->query("UPDATE produk SET nama_produk='$_POST[nama]',harga_produk='$_POST[harga]',
-				deskripsi_produk='$_POST[deskripsi]',stok_produk='$_POST[stok]'
+				deskripsi_produk='$_POST[deskripsi]',rute_perjalanan='$_POST[rute]'
 				WHERE id_produk='$_GET[id]'");
 	}
 

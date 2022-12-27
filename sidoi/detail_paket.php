@@ -162,10 +162,12 @@ $em = $ambil->fetch_assoc();
                     <img class="img-fluid" src="foto_produk/<?php echo $detail["foto_produk"]; ?>" style="margin-top: 40px;">
                 </div>
                 <div class="col-md-6">
-                    <h3 style="margin-top: 40px;"><?php echo $detail["nama_produk"]; ?></h3>
-                    <p style="margin-top: 30px;"><?php echo $detail["deskripsi_produk"]; ?></p>
-                    <h6 style="margin-top: 10px;">Stok: <?php echo $detail["stok_produk"]; ?></h6>
-                    <h5 style="margin-top: 10px;">Rp. <?php echo number_format($detail["harga_produk"]); ?></h5>
+                    <h3 style="margin-top: 30px;"><?php echo $detail["nama_produk"]; ?></h3>
+                    <h6><label style="margin-top: 10px;">Deskripsi</label></h6>
+                    <p><?php echo $detail["deskripsi_produk"]; ?></p>
+                    <h6><label>Rute Perjalan</label></h6>
+                    <p"><?php echo $detail["rute_perjalanan"]; ?></p>
+                    <h5 style="margin-top: 20px;">Harga: Rp. <?php echo number_format($detail["harga_produk"]); ?></h5>
                     <h6><label style="margin-top: 25px;">Jumlah orang</label></h6>
                     <form method="post" class="form-inline">
                         <div class="form-group">

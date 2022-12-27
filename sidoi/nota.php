@@ -161,7 +161,12 @@ $em = $ambil->fetch_assoc();
 				</div>
 			</div>
 
-			<table class="table table-bordered table-responsive-md" style="margin-top: 50px;">
+			<div class="form-group" style="margin-top: 40px;">
+				<h5><label>Tujuan Awal</label></h5>
+				<input type="text" readonly style="background-color: white;" class="form-control" value="<?php echo $detail["tujuan_awal"]; ?>">
+			</div>
+
+			<table class="table table-bordered table-responsive-md" style="margin-top: 30px;">
 				<thead>
 					<tr>
 						<th>No</th>

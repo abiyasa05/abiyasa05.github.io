@@ -21,8 +21,16 @@ $jum = mysqli_num_rows($data);
 
 if ($jum == 0) {
 	echo "<script>alert('Checkout kosong, silahkan beli produk!');</script>";
-	echo "<script>location='index.php';</script>";
+	echo "<script>location='index2.php';</script>";
 }
+?>
+<?php
+//query ambil data
+$email_pelanggan = $_SESSION["pelanggan"]["email_pelanggan"];
+$ambil = $koneksi->query("SELECT * FROM produk JOIN keranjang
+					ON produk.id_produk=keranjang.id_produk
+					WHERE keranjang.email_pelanggan='$email_pelanggan'");
+$detail = $ambil->fetch_assoc();
 ?>
 
 <!DOCTYPE html>
@@ -124,7 +132,7 @@ if ($jum == 0) {
 						<td>No</td>
 						<td>Produk</td>
 						<td>Harga</td>
-						<td>Jumlah</td>
+						<td>Jumlah Orang</td>
 						<td>Total Harga</td>
 					</tr>
 				</thead>
@@ -199,6 +207,14 @@ if ($jum == 0) {
 					</div>
 				</div>
 				<div class="form-group">
+					<label>Rute Perjalanan</label>
+					<input type="text" readonly style="background-color: white;" class="form-control" value="<?php echo $detail["rute_perjalanan"]; ?>">
+				</div>
+				<div class="form-group">
+					<label>Tujuan Awal</label>
+					<input type="text" class="form-control" name="tujuan_awal" placeholder="Masukkan tujuan awal berjasarkan rute perjalanan diatas!">
+				</div>
+				<div class="form-group">
 					<label>Alamat Lengkap Penjemputan</label>
 					<textarea class="form-control" name="alamat_penyusulan" placeholder="Masukkan alamat penjemputan secara lengkap beserta kode pos!"></textarea>
 				</div>
@@ -212,6 +228,7 @@ if ($jum == 0) {
 				$id_jamsul = $_POST["id_jamsul"];
 				$tanggal_pembelian = date("Y-m-d");
 				$tgl_penyusulan = $_POST['tgl_penyusulan'];
+				$tujuan_awal = $_POST['tujuan_awal'];
 				$alamat_penyusulan = $_POST['alamat_penyusulan'];
 
 				$ambil = $koneksi->query("SELECT * FROM jamsul WHERE id_jamsul='$id_jamsul'");
@@ -222,8 +239,8 @@ if ($jum == 0) {
 
 				//menyimpan data ke dalam tabel pembelian
 				$koneksi->query("INSERT INTO pembelian (email_pelanggan,id_jamsul,tanggal_pembelian,total_pembelian,
-					tgl_penyusulan,jam_penyusulan,alamat_penyusulan) VALUES ('$email_pelanggan','$id_jamsul','$tanggal_pembelian',
-					'$total_pembelian','$tgl_penyusulan','$jam_penyusulan','$alamat_penyusulan')");
+					tgl_penyusulan,jam_penyusulan,tujuan_awal,alamat_penyusulan) VALUES ('$email_pelanggan','$id_jamsul','$tanggal_pembelian',
+					'$total_pembelian','$tgl_penyusulan','$jam_penyusulan','$tujuan_awal','$alamat_penyusulan')");
 
 				//mendapatkan id_pembelian yang barusan terjadi
 				$id_pembelian_barusan = $koneksi->insert_id;
@@ -245,7 +262,7 @@ if ($jum == 0) {
 						VALUES ('$id_pembelian_barusan','$id_produk','$nama','$harga','$subharga','$jumlah')");
 
 					//update stok
-					$koneksi->query("UPDATE produk SET stok_produk=stok_produk - $jumlah WHERE id_produk='$id_produk'");
+					// $koneksi->query("UPDATE produk SET stok_produk=stok_produk - $jumlah WHERE id_produk='$id_produk'");
 				}
 
 				//menghapus keranjang
