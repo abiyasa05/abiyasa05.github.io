@@ -55,69 +55,82 @@ $em = $ambil->fetch_assoc();
 
     <title>SI - DO'I Tour Builder</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="asset/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="asset/css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="asset/css/style.css">
+
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/brands.min.css">
-    <link rel="stylesheet" href="assets/css/solid.min.css">
+    <link rel="stylesheet" href="assets/css/solid.min.css"> -->
 
     <!-- JS -->
-    <script src="/scripts/jquery.min.js"></script>
+    <!-- <script src="/scripts/jquery.min.js"></script>
     <script src="assets/js/solid.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/fontawesome.min.js"></script>
-    <script src="assets/js/brands.min.js"></script>
+    <script src="assets/js/brands.min.js"></script> -->
 </head>
 
 <body>
     <!--Navbar -->
-    <nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.php">SI - DO'I</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.php">Tour Builder
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="paket_ziarah2.php">Paket Ziarah</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.php">Panduan Doa</a>
-                </li>
-            </ul>
-            <form action="pencarian2.php" method="get" class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" name="keyword" placeholder="Pencarian" aria-label="Search">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Cari</button>
-            </form>
-            <ul class="navbar-nav ml-5">
-                <a href="login.php" class="btn btn-outline-light waves-effect btn-md">
-                    <i class="fas fa-sign-in-alt mr-2" aria-hidden="true"></i>Login
-                </a>
-            </ul>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
         </div>
-    </nav>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+   
+    
+    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-6 col-xl-2">
+            <h1 class="mb-0 site-logo"><a href="index.html">SI - DO'I</a></h1>
+          </div>
+
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="index.html" class="nav-link active">Tour Builder</a></li>
+                <li><a href="paket_ziarah2.php" class="nav-link">Paket Ziarah</a></li>
+                <li><a href="login.php" class="nav-link" style="margin-left: 50px;">Login</a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+
+        </div>
+      </div>
+      
+    </header>
+
+    <div class="hero" style="background-image: url('asset/images/new1.png');"></div>
     <!--/.Navbar -->
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
-    <!-- Popper.JS -->
-    <script src="assets/js//popper.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#sidebarCollapse').on('click', function() {
-                $('#sidebar').toggleClass('active');
-            });
-        });
-    </script>
-    <!-- /javascript-->
+    <script src="asset/js/jquery-3.3.1.min.js"></script>
+    <script src="asset/js/popper.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/jquery.sticky.js"></script>
+    <script src="asset/js/main.js"></script>
 
     <!-- konten -->
     <div class="container" style="margin-bottom: 50px;">
@@ -175,7 +188,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Paket Jawa Timur</h5>
                                 <p class="card-text">Dikenal dengan wali limo yakni Sunan Ampel Surabaya, Sunan Giri,Sunan Maulana Malik Ibrahim, Sunan Drajat Lamongan dan Sunan Bonang Tuban.</p>
-                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -183,7 +196,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Paket Jawa Barat</h5>
                                 <p class="card-text">Paket Jawa Barat terdapat satu wali yaitu Sunan Gunung Jati yang terletak di Cirebon Jawa Barat.</p>
-                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -191,7 +204,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Paket Jawa Tengah</h5>
                                 <p class="card-text">Dikenal dengan wali telu yakni Sunan Muria Kudus , Sunan Kudus Kudus Jawa Tengah, dan Sunan Kalijaga Demak.</p>
-                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>
@@ -203,7 +216,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Paket Makam Ponorogo</h5>
                                 <p class="card-text">Terdiri dari 3 makam wali yaitu Makam Kyai Ageng Hasan Besari, Makam Bathoro Khatong, Makam Astana Srandil</p>
-                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -211,7 +224,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Paket Makam Solo</h5>
                                 <p class="card-text">Terdiri atas makam Habib Alwi bin Ali Al-Habsyi, Kiai Ageng Henis Laweyan, Makam Kiai Muhammad bin Sulaiman bin Zakariya.</p>
-                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -219,7 +232,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Paket Makam Malang</h5>
                                 <p class="card-text">Terdiri dari 4 makam wali yaitu Makam Kyai Ageng Gribig, Makam Mbah Ageng Sembeodjo, Makam Mbah Patok Galih, Makam Mbah Honggo</p>
-                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>
@@ -231,7 +244,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Paket Makam Jombang</h5>
                                 <p class="card-text">Terdapat Makam KH Abdul Wahab Chasbullah, Makam KH Bisri Syansuri, Makam Sayyid Sulaiman.</p>
-                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -239,7 +252,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Paket Makam Semarang</h5>
                                 <p class="card-text">Terdapat Makam Ki Ageng Pandanaran,Makam Ki Ageng Galang Sewu, Makam Kiai Haji Sholeh Darat. </p>
-                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -247,7 +260,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Paket Makam Madura</h5>
                                 <p class="card-text">Terdapat Makam Syaikhona Kholil Bangkalan, Makam Raden Abdul Kadirun.</p>
-                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>
@@ -278,7 +291,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
                                 <p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
-                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -286,7 +299,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
                                 <p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
-                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -294,7 +307,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
                                 <p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
-                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>
@@ -306,7 +319,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
                                 <p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
-                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -314,7 +327,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
                                 <p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
-                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -322,7 +335,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
                                 <p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
-                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>
@@ -334,7 +347,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
                                 <p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
-                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -342,7 +355,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
                                 <p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
-                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                         <div class="card d-none d-md-block">
@@ -350,7 +363,7 @@ $em = $ambil->fetch_assoc();
                             <div class="card-body">
                                 <h5 class="card-title">Panduan Doa Ziarah Kubur</h5>
                                 <p class="card-text">Doa Ziarah Kubur Lengkap dengan Tahlil dan Susunannya, Dibaca saat Nyekar Lebaran · Doa Ziarah Kubur yang Shahih Sesuai Ajaran Rasulullah.</p>
-                                <a href="login.php" class="btn btn-primary">Lihat Selengkapnya</a>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>
@@ -438,22 +451,22 @@ $em = $ambil->fetch_assoc();
                     <ul class="list-unstyled">
                         <li class="list-inline-item">
                             <a class="mx-1" href="#">
-                                <i class="fab fa-facebook-f text-light waves-dark"></i>
+                                <span class="icon-facebook text-light"></span>
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a class="mx-1" href="#">
-                                <i class="fab fa-twitter text-light"></i>
+                                <span class="icon-twitter text-light"></span>
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a class="mx-1" href="#">
-                                <i class="fab fa-instagram text-light"></i>
+                                <span class="icon-instagram text-light"></span>
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a class="mx-1" href="#">
-                                <i class="fab fa-youtube text-light"></i>
+                                <span class="icon-youtube text-light"></span>
                             </a>
                         </li>
                     </ul>
