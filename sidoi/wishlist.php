@@ -35,89 +35,95 @@ if ($jum == 0) {
 
 	<title>SI - DO'I - Wishlist</title>
 
-	<!-- CSS -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/brands.min.css">
-	<link rel="stylesheet" href="assets/css/solid.min.css">
 
-	<!-- JS -->
-	<script src="/scripts/jquery.min.js"></script>
-	<script src="assets/js/solid.min.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/fontawesome.min.js"></script>
-	<script src="assets/js/brands.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="asset/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="asset/css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="asset/css/style2.css">
+
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/brands.min.css">
+    <link rel="stylesheet" href="assets/css/solid.min.css"> -->
+
+    <!-- JS -->
+    <!-- <script src="/scripts/jquery.min.js"></script>
+    <script src="assets/js/solid.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/fontawesome.min.js"></script>
+    <script src="assets/js/brands.min.js"></script> -->
 </head>
 
 <body>
 	<!--Navbar -->
-	<nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="index2.php">SI - DO'I</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent-333">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="index2.php">Tour Builder</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="paket_ziarah.php">Paket Ziarah</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="panduan_doa.php">Panduan Doa</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="history_pesanan.php">History Pesanan</a>
-				</li>
-			</ul>
-			<form action="pencarian.php" method="get" class="form-inline my-2 my-lg-0 mr-5">
-				<input class="form-control mr-sm-2" type="search" name="keyword" placeholder="Pencarian" aria-label="Search">
-				<button class="btn btn-outline-light my-2 my-sm-0" type="submit">Cari</button>
-			</form>
-			<ul class="navbar-nav mr-2">
-				<a class="nav-link active" href="wishlist.php">
-					<i class="fas fa-bookmark"></i>
-				</a>
-			</ul>
-			<ul class="navbar-nav mr-2">
-				<a class="nav-link" href="keranjang.php">
-					<i class="fas fa-shopping-cart"></i>
-				</a>
-			</ul>
-			<ul class="navbar-nav">
-				<li class="nav-item dropdown">
-					<a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<?php echo $_SESSION["pelanggan"]["nama_pelanggan"] ?></a>
-					<div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-						<a class="dropdown-item" href="profil.php?email=<?php echo $_SESSION["pelanggan"]["email_pelanggan"]; ?>">Profil</a>
-						<a class="dropdown-item" href="logout.php">Logout</a>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<!--/.Navbar -->
+	<div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+    <header class="site-navbar site-navbar-target bg-dark">
 
-	<!-- jQuery CDN - Slim version (=without AJAX) -->
-	<script src="assets/js/jquery-3.3.1.slim.min.js"></script>
-	<!-- Popper.JS -->
-	<script src="assets/js//popper.min.js"></script>
-	<!-- Bootstrap JS -->
-	<script src="assets/js/bootstrap.min.js"></script>
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-6 col-xl-2">
+            <h1 class="mb-0 site-logo"><a href="index2.php" style="color: #e1e1e1;">SI - DO'I</a></h1>
+          </div>
 
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#sidebarCollapse').on('click', function() {
-				$('#sidebar').toggleClass('active');
-			});
-		});
-	</script>
-	<!-- /javascript-->
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="index2.php" class="nav-link" style="color: #e1e1e1;">Tour Builder</a></li>
+                <li><a href="paket_ziarah.php" class="nav-link" style="color: #e1e1e1;">Paket Ziarah</a></li>
+				<li><a href="panduan_doa.php" class="nav-link" style="color: #e1e1e1;">Panduan Doa</a></li>
+				<li><a href="history_pesanan.php" class="nav-link" style="color: #e1e1e1; margin-right: 50px;">History Pesanan</a></li>
+				<li><a href="wishlist.php" class="nav-link active" style="color: #e1e1e1;"><i class="icon-bookmark"></i></a></li>
+				<li><a href="keranjang.php" class="nav-link" style="color: #e1e1e1;"><i class="icon-shopping-cart"></i></a></li>
+				<li class="has-children">
+                  <a href="#" class="nav-link" style="color: #e1e1e1;"><?php echo $_SESSION["pelanggan"]["nama_pelanggan"] ?></a>
+                  <ul class="dropdown">
+                    <li><a href="profil.php?email=<?php echo $_SESSION["pelanggan"]["email_pelanggan"]; ?>" class="nav-link">Profil</a></li>
+                    <li><a href="logout.php" class="nav-link">Logout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+
+        </div>
+      </div>
+      
+    </header>
+
+    <script src="asset/js/jquery-3.3.1.min.js"></script>
+    <script src="asset/js/popper.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/jquery.sticky.js"></script>
+    <script src="asset/js/main.js"></script>
 
 	<!-- Konten -->
 	<section class="riwayat">
 		<div class="container" style="margin-bottom: 50px;">
+
+			<br><br><br>
+
 			<h2 style="margin-top: 35px;">Wishlist <?php echo $_SESSION["pelanggan"]["nama_pelanggan"]; ?></h2>
 
 			<hr color="black">

@@ -101,14 +101,14 @@ $em = $ambil->fetch_assoc();
         <div class="row align-items-center">
           
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html">SI - DO'I</a></h1>
+            <h1 class="mb-0 site-logo"><a href="index.php">SI - DO'I</a></h1>
           </div>
 
           <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="index.html" class="nav-link active">Tour Builder</a></li>
+                <li><a href="index.php" class="nav-link active">Tour Builder</a></li>
                 <li><a href="paket_ziarah2.php" class="nav-link">Paket Ziarah</a></li>
                 <li><a href="login.php" class="nav-link" style="margin-left: 50px;">Login</a></li>
               </ul>
@@ -134,7 +134,7 @@ $em = $ambil->fetch_assoc();
 
     <!-- konten -->
     <div class="container" style="margin-bottom: 50px;">
-        <h2 style="margin-top: 35px;">Tour Builder</h2>
+        <h2 style="margin-top: 50px;">Tour Builder</h2>
 
         <hr color="black">
 

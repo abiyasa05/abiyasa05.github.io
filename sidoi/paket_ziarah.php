@@ -61,91 +61,96 @@ $em = $ambil->fetch_assoc();
 
     <title>SI - DO'I Paket Ziarah</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="asset/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="asset/css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="asset/css/style.css">
+
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/brands.min.css">
-    <link rel="stylesheet" href="assets/css/solid.min.css">
+    <link rel="stylesheet" href="assets/css/solid.min.css"> -->
 
     <!-- JS -->
-    <script src="/scripts/jquery.min.js"></script>
+    <!-- <script src="/scripts/jquery.min.js"></script>
     <script src="assets/js/solid.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/fontawesome.min.js"></script>
-    <script src="assets/js/brands.min.js"></script>
+    <script src="assets/js/brands.min.js"></script> -->
 </head>
 
 <body>
     <!--Navbar -->
-    <nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index2.php">SI - DO'I</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index2.php">Tour Builder</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="paket_ziarah.php">Paket Ziarah
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="panduan_doa.php">Panduan Doa</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="history_pesanan.php">History Pesanan</a>
-                </li>
-            </ul>
-            <form action="pencarian.php" method="get" class="form-inline my-2 my-lg-0 mr-5">
-                <input class="form-control mr-sm-2" type="search" name="keyword" placeholder="Pencarian" aria-label="Search">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Cari</button>
-            </form>
-            <ul class="navbar-nav mr-2">
-                <a class="nav-link" href="wishlist.php">
-                    <i class="fas fa-bookmark"></i>
-                </a>
-            </ul>
-            <ul class="navbar-nav mr-2">
-                <a class="nav-link" href="keranjang.php">
-                    <i class="fas fa-shopping-cart"></i>
-                </a>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <?php echo $_SESSION["pelanggan"]["nama_pelanggan"] ?></a>
-                    <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-                        <a class="dropdown-item" href="profil.php?email=<?php echo $_SESSION["pelanggan"]["email_pelanggan"]; ?>">Profil</a>
-                        <a class="dropdown-item" href="logout.php">Logout</a>
-                    </div>
-                </li>
-            </ul>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
         </div>
-    </nav>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+   
+    
+    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-6 col-xl-2">
+            <h1 class="mb-0 site-logo"><a href="index2.php">SI - DO'I</a></h1>
+          </div>
+
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="index2.php" class="nav-link">Tour Builder</a></li>
+                <li><a href="paket_ziarah.php" class="nav-link active">Paket Ziarah</a></li>
+				<li><a href="panduan_doa.php" class="nav-link">Panduan Doa</a></li>
+				<li><a href="history_pesanan.php" class="nav-link">History Pesanan</a></li>
+				<li><a href="wishlist.php" class="nav-link" style="margin-left: 50px;"><i class="icon-bookmark"></i></a></li>
+				<li><a href="keranjang.php" class="nav-link"><i class="icon-shopping-cart"></i></a></li>
+				<li class="has-children">
+                  <a href="#" class="nav-link"><?php echo $_SESSION["pelanggan"]["nama_pelanggan"] ?></a>
+                  <ul class="dropdown">
+                    <li><a href="profil.php?email=<?php echo $_SESSION["pelanggan"]["email_pelanggan"]; ?>" class="nav-link">Profil</a></li>
+                    <li><a href="logout.php" class="nav-link">Logout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+
+        </div>
+      </div>
+      
+    </header>
+
+    <div class="hero" style="background-image: url('asset/images/new2.png');"></div>
     <!--/.Navbar -->
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
-    <!-- Popper.JS -->
-    <script src="assets/js//popper.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#sidebarCollapse').on('click', function() {
-                $('#sidebar').toggleClass('active');
-            });
-        });
-    </script>
-    <!-- /javascript-->
+    <script src="asset/js/jquery-3.3.1.min.js"></script>
+    <script src="asset/js/popper.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/jquery.sticky.js"></script>
+    <script src="asset/js/main.js"></script>
 
     <!-- konten -->
     <div class="container" style="margin-bottom: 50px;">
-        <h2 style="margin-top: 35px;">Paket Ziarah</h2>
+        <h2 style="margin-top: 50px;">Paket Ziarah</h2>
 
         <hr color="black">
 
@@ -160,7 +165,7 @@ $em = $ambil->fetch_assoc();
                             <h5><?php echo $perproduk['nama_produk'] ?></h5>
                             <h6>Rp. <?php echo number_format($perproduk['harga_produk']) ?></h6>
                             <a href="detail_paket.php?id=<?php echo $perproduk['id_produk']; ?>" class="btn btn-primary">Detail</a>
-                            <a href="tambahwishlist.php?id=<?php echo $perproduk["id_produk"]; ?>" class="btn btn-primary"><i class="fas fa-bookmark"></i></a>
+                            <a href="tambahwishlist.php?id=<?php echo $perproduk["id_produk"]; ?>" class="btn btn-primary"><i class="icon-bookmark"></i></a>
                             <br><br><br><br>
                         </div>
                     </div>
@@ -214,13 +219,13 @@ $em = $ambil->fetch_assoc();
 
                     <ul class="list-unstyled">
                         <p>
-                            <i class="fas fa-home mr-3"></i> Malang, Indonesia
+                            <i class="icon-home mr-3"></i> Malang, Indonesia
                         </p>
                         <p>
-                            <i class="fas fa-envelope mr-3"></i> sido'i@gmail.com
+                            <i class="icon-envelope mr-3"></i> sido'i@gmail.com
                         </p>
                         <p>
-                            <i class="fas fa-phone mr-3"></i> +6282-301-329-134
+                            <i class="icon-phone mr-3"></i> +6282-301-329-134
                         </p>
                     </ul>
                     <!-- Links -->
@@ -241,22 +246,22 @@ $em = $ambil->fetch_assoc();
                     <ul class="list-unstyled">
                         <li class="list-inline-item">
                             <a class="mx-1" href="#">
-                                <i class="fab fa-facebook-f text-light waves-dark"></i>
+                                <span class="icon-facebook text-light"></span>
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a class="mx-1" href="#">
-                                <i class="fab fa-twitter text-light"></i>
+                                <span class="icon-twitter text-light"></span>
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a class="mx-1" href="#">
-                                <i class="fab fa-instagram text-light"></i>
+                                <span class="icon-instagram text-light"></span>
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a class="mx-1" href="#">
-                                <i class="fab fa-youtube text-light"></i>
+                                <span class="icon-youtube text-light"></span>
                             </a>
                         </li>
                     </ul>
