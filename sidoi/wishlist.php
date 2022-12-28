@@ -134,7 +134,7 @@ if ($jum == 0) {
 						<th>No</th>
 						<th>Nama</th>
 						<th>Harga</th>
-						<th>Stok</th>
+						<th>Rute Perjalanan</th>
 						<th>Opsi</th>
 					</tr>
 				</thead>
@@ -155,9 +155,9 @@ if ($jum == 0) {
 							<td><?php echo $nomor; ?></td>
 							<td><?php echo $data["nama_produk"]; ?></td>
 							<td><?php echo $data["harga_produk"]; ?></td>
-							<td><?php echo $data["stok_produk"]; ?></td>
+							<td><?php echo $data["rute_perjalanan"]; ?></td>
 							<td>
-								<a href="detail_paket.php?id=<?php echo $data['id_produk']; ?>" class="btn btn-primary mb-1">Lihat Produk</a>
+								<a href="detail_paket.php?id=<?php echo $data['id_produk']; ?>" class="btn btn-primary mb-1">Lihat Paket</a>
 								<a href="hapuswishlist.php?id=<?php echo $data['id_produk']; ?>" class="btn btn-danger mb-1" onclick="return confirm('Apakah anda yakin ingin menghapus ini?')">Hapus</a>
 							</td>
 						</tr>
