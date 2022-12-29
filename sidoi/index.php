@@ -76,7 +76,7 @@ $em = $ambil->fetch_assoc();
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="asset/css/bootstrap.min.css">
-    
+
     <!-- Style -->
     <link rel="stylesheet" href="asset/css/style.css">
 
@@ -97,41 +97,41 @@ $em = $ambil->fetch_assoc();
 <body>
     <!--Navbar -->
     <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
         </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
+        <div class="site-mobile-menu-body"></div>
     </div>
-   
-    
+
+
     <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
-      <div class="container">
-        <div class="row align-items-center">
-          
-          <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.php">SI - DO'I</a></h1>
-          </div>
+        <div class="container">
+            <div class="row align-items-center">
 
-          <div class="col-12 col-md-10 d-none d-xl-block">
-            <nav class="site-navigation position-relative text-right" role="navigation">
+                <div class="col-6 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.php">SI - DO'I</a></h1>
+                </div>
 
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="index.php" class="nav-link active">Tour Builder</a></li>
-                <li><a href="paket_ziarah2.php" class="nav-link">Paket Ziarah</a></li>
-                <li><a href="login.php" class="nav-link" style="margin-left: 50px;">Login</a></li>
-              </ul>
-            </nav>
-          </div>
+                <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+
+                        <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                            <li><a href="index.php" class="nav-link active">Tour Builder</a></li>
+                            <li><a href="paket_ziarah2.php" class="nav-link">Paket Ziarah</a></li>
+                            <li><a href="login.php" class="nav-link" style="margin-left: 50px;">Login</a></li>
+                        </ul>
+                    </nav>
+                </div>
 
 
-          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+                <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
 
+            </div>
         </div>
-      </div>
-      
+
     </header>
 
     <div class="hero" style="background-image: url('asset/images/new1.png');"></div>
@@ -150,18 +150,18 @@ $em = $ambil->fetch_assoc();
 
             <!-- Custom rounded search bars with input group -->
             <form action="pencarian2.php" method="get">
-            <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-5 mt-5">
-                <div class="input-group">
-                <input type="search" name="keyword" placeholder="Apa yang ingin anda cari?" aria-describedby="button-addon1" class="form-control border-0 bg-light rounded rounded-pill">
-                <div class="input-group-append">
-                    <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i class="icon-search"></i></button>
+                <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-5 mt-5">
+                    <div class="input-group">
+                        <input type="search" name="keyword" placeholder="Apa yang ingin anda cari?" aria-describedby="button-addon1" class="form-control border-0 bg-light rounded rounded-pill">
+                        <div class="input-group-append">
+                            <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i class="icon-search"></i></button>
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
             </form>
             <!-- End -->
 
-        </div>   
+        </div>
 
         <h2 style="margin-top: 50px;">Tour Builder</h2>
 
