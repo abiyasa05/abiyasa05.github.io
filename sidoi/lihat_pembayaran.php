@@ -135,6 +135,9 @@ $pecah = $ambil->fetch_assoc();
 
   <!-- Konten -->
   <div class="container" style="margin-bottom: 50px;">
+
+	<br><br><br>
+
     <h2 style="margin-top: 35px;">Lihat Pembayaran</h2>
 
     <hr color="black">
@@ -159,12 +162,13 @@ $pecah = $ambil->fetch_assoc();
             <td>Rp. <?php echo number_format($detbay["total_pembelian"]); ?></td>
           </tr>
         </table>
+		<a href="history_pesanan.php" class="btn btn-primary">Kembali</a>
       </div>
       <div class="col-md-6">
         <label>Foto Bukti Pembayaran</label>
         <img class="img-fluid img-thumbnail" src="bukti_pembayaran/<?php echo $detbay['bukti']; ?>">
       </div>
-      <a href="history_pesanan.php" class="btn btn-primary">Kembali</a>
+      
     </div>
   </div>
 
