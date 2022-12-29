@@ -150,6 +150,24 @@ $em = $ambil->fetch_assoc();
 
 	<!-- konten -->
 	<div class="container" style="margin-bottom: 50px;">
+		
+		<div class="bg-white p-5 rounded shadow" style="margin-top: 50px; background-image: url('asset/images/search1.png');">
+
+			<!-- Custom rounded search bars with input group -->
+			<form action="pencarian.php" method="get">
+				<div class="p-1 bg-light rounded rounded-pill shadow-sm mb-5 mt-5">
+					<div class="input-group">
+						<input type="search" name="keyword" placeholder="Apa yang ingin anda cari?" aria-describedby="button-addon1" class="form-control border-0 bg-light rounded rounded-pill">
+						<div class="input-group-append">
+							<button id="button-addon1" type="submit" class="btn btn-link text-primary"><i class="icon-search"></i></button>
+						</div>
+					</div>
+				</div>
+			</form>
+			<!-- End -->
+
+		</div>
+		
 		<h2 style="margin-top: 50px;">Tour Builder</h2>
 
 		<hr color="black">
