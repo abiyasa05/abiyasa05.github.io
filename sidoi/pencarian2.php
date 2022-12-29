@@ -129,10 +129,8 @@ while ($pecah = $ambil->fetch_assoc()) {
 	</div>
 	<!-- /konten -->
 
-	<!-- <br><br><br><br><br><br><br> -->
-
 	<!-- Footer -->
-	<footer class="page-footer bg-dark font-small stylish-color-dark pt-4" style="color: white">
+	<footer class="page-footer bg-dark font-small stylish-color-dark pt-4" style="color: white; margin-top: 250px;">
 
 		<!-- Footer Links -->
 		<div class="container text-center text-md-left">
