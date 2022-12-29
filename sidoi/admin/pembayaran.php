@@ -54,7 +54,7 @@ $pecah = $ambil->fetch_assoc();
 		<label>Status</label>
 		<select class="form-control" name="status">
 			<option value="">Pilih Status</option>
-			<option value="barang dikirim">Barang Dikirim</option>
+			<option value="lunas">Lunas</option>
 			<option value="batal">Batal</option>
 		</select>
 	</div>
