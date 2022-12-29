@@ -270,7 +270,7 @@ $em = $ambil->fetch_assoc();
 
                     <hr color="white">
 
-                    <p>
+                    <p class="text-light">
                         Aplikasi “Si-Do'i” (Solusi Dolan Islami) merupakan sebuah aplikasi yang berguna untuk memudahkan
                         peziarah dalam melakukan ziarah wali songo.
                     </p>
@@ -289,14 +289,14 @@ $em = $ambil->fetch_assoc();
                     <hr color="white">
 
                     <ul class="list-unstyled">
-                        <p>
-                            <i class="fas fa-home mr-3"></i> Malang, Indonesia
+                        <p class="text-light">
+                            <i class="icon-home mr-3"></i> Malang, Indonesia
                         </p>
-                        <p>
-                            <i class="fas fa-envelope mr-3"></i> sido'i@gmail.com
+                        <p class="text-light">
+                            <i class="icon-envelope mr-3"></i> sido'i@gmail.com
                         </p>
-                        <p>
-                            <i class="fas fa-phone mr-3"></i> +6282-301-329-134
+                        <p class="text-light">
+                            <i class="icon-phone mr-3"></i> +6282-301-329-134
                         </p>
                     </ul>
                     <!-- Links -->
@@ -317,22 +317,22 @@ $em = $ambil->fetch_assoc();
                     <ul class="list-unstyled">
                         <li class="list-inline-item">
                             <a class="mx-1" href="#">
-                                <i class="fab fa-facebook-f text-light waves-dark"></i>
+                                <i class="icon-facebook-f text-light waves-dark"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a class="mx-1" href="#">
-                                <i class="fab fa-twitter text-light"></i>
+                                <i class="icon-twitter text-light"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a class="mx-1" href="#">
-                                <i class="fab fa-instagram text-light"></i>
+                                <i class="icon-instagram text-light"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a class="mx-1" href="#">
-                                <i class="fab fa-youtube text-light"></i>
+                                <i class="icon-youtube text-light"></i>
                             </a>
                         </li>
                     </ul>

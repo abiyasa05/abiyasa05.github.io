@@ -191,72 +191,72 @@ $pecah = $ambil->fetch_assoc();
 
 					<hr color="white">
 
-					<p>
-						Aplikasi “Si-Do'i” (Solusi Dolan Islami) merupakan sebuah aplikasi yang berguna untuk memudahkan
-						peziarah dalam melakukan ziarah wali songo.
-					</p>
+					<p class="text-light">
+                        Aplikasi “Si-Do'i” (Solusi Dolan Islami) merupakan sebuah aplikasi yang berguna untuk memudahkan
+                        peziarah dalam melakukan ziarah wali songo.
+                    </p>
 
-				</div>
-				<!-- Grid column -->
+                </div>
+                <!-- Grid column -->
 
-				<hr class="clearfix w-100 d-md-none">
+                <hr class="clearfix w-100 d-md-none">
 
-				<!-- Grid column -->
-				<div class="col-md-3 mx-auto">
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
 
-					<!-- Links -->
-					<h5 class="font-weight-bold mt-3 mb-4">Kontak Kami</h5>
+                    <!-- Links -->
+                    <h5 class="font-weight-bold mt-3 mb-4">Kontak Kami</h5>
 
-					<hr color="white">
+                    <hr color="white">
 
-					<ul class="list-unstyled">
-						<p>
-							<i class="fas fa-home mr-3"></i> Malang, Indonesia
-						</p>
-						<p>
-							<i class="fas fa-envelope mr-3"></i> sido'i@gmail.com
-						</p>
-						<p>
-							<i class="fas fa-phone mr-3"></i> +6282-301-329-134
-						</p>
-					</ul>
-					<!-- Links -->
+                    <ul class="list-unstyled">
+                        <p class="text-light">
+                            <i class="icon-home mr-3"></i> Malang, Indonesia
+                        </p>
+                        <p class="text-light">
+                            <i class="icon-envelope mr-3"></i> sido'i@gmail.com
+                        </p>
+                        <p class="text-light">
+                            <i class="icon-phone mr-3"></i> +6282-301-329-134
+                        </p>
+                    </ul>
+                    <!-- Links -->
 
-				</div>
-				<!-- Grid column -->
+                </div>
+                <!-- Grid column -->
 
-				<hr class="clearfix w-100 d-md-none">
+                <hr class="clearfix w-100 d-md-none">
 
-				<!-- Grid column -->
-				<div class="col-md-2 mx-auto">
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
 
-					<!-- Links -->
-					<h5 class="font-weight-bold mt-3 mb-4">Sosial Media</h5>
+                    <!-- Links -->
+                    <h5 class="font-weight-bold mt-3 mb-4">Sosial Media</h5>
 
-					<hr color="white">
+                    <hr color="white">
 
-					<ul class="list-unstyled">
-						<li class="list-inline-item">
-							<a class="mx-1" href="#">
-								<i class="fab fa-facebook-f text-light waves-dark"></i>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a class="mx-1" href="#">
-								<i class="fab fa-twitter text-light"></i>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a class="mx-1" href="#">
-								<i class="fab fa-instagram text-light"></i>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a class="mx-1" href="#">
-								<i class="fab fa-youtube text-light"></i>
-							</a>
-						</li>
-					</ul>
+                    <ul class="list-unstyled">
+                        <li class="list-inline-item">
+                            <a class="mx-1" href="#">
+                                <i class="icon-facebook-f text-light waves-dark"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="mx-1" href="#">
+                                <i class="icon-twitter text-light"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="mx-1" href="#">
+                                <i class="icon-instagram text-light"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="mx-1" href="#">
+                                <i class="icon-youtube text-light"></i>
+                            </a>
+                        </li>
+                    </ul>
 
 				</div>
 				<!-- Grid column -->
