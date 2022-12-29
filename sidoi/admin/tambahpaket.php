@@ -11,10 +11,6 @@
 		<input type="number" class="form-control" name="harga">
 	</div>
 	<div class="form-group">
-		<label>Stok</label>
-		<input type="number" class="form-control" name="stok">
-	</div>
-	<div class="form-group">
 		<label>Deskripsi</label>
 		<textarea class="form-control" name="deskripsi" rows="10"></textarea>
 	</div>

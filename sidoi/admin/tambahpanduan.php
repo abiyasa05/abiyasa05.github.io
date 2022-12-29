@@ -3,10 +3,6 @@
 
 <form action="ScriptFileUpload.php" method="post" enctype="multipart/form-data">
     <div class="form-group">
-        <label>Kode Buku</label>
-        <input type="text" class="form-control" name="kode">
-    </div>
-    <div class="form-group">
         <label>Nama Buku</label>
         <input class="form-control" name="nama"></input>
     </div>
