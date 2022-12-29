@@ -11,30 +11,24 @@
 <div class="row">
 	<div class="col-md-4">
 		<h4>Pembelian</h4>
-		<p>
-			Tanggal: <?php echo $detail['tanggal_pembelian']; ?> <br>
-			Total: Rp. <?php echo number_format($detail['total_pembelian']); ?> <br>
-			Status: <?php echo $detail['status_pembelian']; ?>
-		</p>
+		Tanggal: <?php echo $detail['tanggal_pembelian']; ?> <br>
+		Total: Rp. <?php echo number_format($detail['total_pembelian']); ?> <br>
+		Status: <?php echo $detail['status_pembelian']; ?>
 	</div>
 	<div class="col-md-4">
 		<h4>Pelanggan</h4>
-		<p>
-			<strong>Nama: <?php echo $detail['nama_pelanggan']; ?></strong> <br>
-			<?php echo $detail['telepon_pelanggan']; ?> <br>
-			<?php echo $detail['email_pelanggan']; ?>
-		</p>
+		<strong>Nama: <?php echo $detail['nama_pelanggan']; ?></strong> <br>
+		<?php echo $detail['telepon_pelanggan']; ?> <br>
+		<?php echo $detail['email_pelanggan']; ?>
 	</div>
-	<div class="col-md-4">
-		<h4>Pengiriman</h4>
-		<p>
-			<strong>Lokasi pulau: <?php echo $detail["nama_pulau"]; ?></strong> <br>
-			Tarif: Rp. <?php echo number_format($detail["tarif"]); ?> <br>
-			Alamat: <?php echo $detail["alamat_pengiriman"]; ?>
-		</p>
+	<div class="col-md-3 vl">
+		<h4>Penjemputan</h4>
+		<strong><?php echo $detail['tgl_penyusulan']; ?></strong> <br>
+		Jam Penjemputan: <?php echo $detail['jam_penyusulan']; ?> <br>
+		Alamat: <?php echo $detail['alamat_penyusulan']; ?>
 	</div>
 </div>
-
+<br><br>
 <table class="table table-bordered">
 	<thead>
 		<tr>
