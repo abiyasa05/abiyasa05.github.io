@@ -57,9 +57,6 @@ if (!isset($_SESSION["pelanggan"])) {
                     <a href="index.php?halaman=pelanggan"></i>Pelanggan</a>
                 </li>
                 <li>
-                    <a href="index.php?halaman=umpanbalik"></i>Umpan Balik</a>
-                </li>
-                <li>
                     <a href="index.php?halaman=jamsul"></i>Penjemputan</a>
                 </li>
                 <li>
