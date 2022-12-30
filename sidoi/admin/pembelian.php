@@ -29,7 +29,7 @@
 				<a href="index.php?halaman=pembayaran&id=<?php echo $pecah['id_pembelian']; ?>" class="btn btn-secondary">Konfirmasi Pembayaran</a>
 				<?php endif ?>
 
-				<?php if ($pecah['status_pembelian']=="barang dikirim"): ?>
+				<?php if ($pecah['status_pembelian']=="lunas"): ?>
 				<a href="index.php?halaman=detailpembayaran&id=<?php echo $pecah['id_pembelian']; ?>" class="btn btn-success">Detail Pembayaran</a>
 				<?php endif ?>
 

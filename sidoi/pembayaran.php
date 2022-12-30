@@ -144,7 +144,7 @@ $em = $ambil->fetch_assoc();
 
     <br><br><br>
 
-    <h2 style="margin-top: 35px;">Konfirmasi Pembayaran</h2>
+    <h2 style="margin-top: 35px;">Pembayaran</h2>
 
     <hr color="black">
 
@@ -159,7 +159,7 @@ $em = $ambil->fetch_assoc();
         <input type="text" readonly value="<?php echo $_SESSION["pelanggan"]["nama_pelanggan"] ?>" name="nama" class="form-control" style="background-color: white;">
       </div>
       <div class="form-group">
-        <label>Jumlah</label>
+        <label>Total Harga</label>
         <input type="text" readonly value="Rp. <?php echo number_format($detpem["total_pembelian"]) ?>" name="jumlah" class="form-control" style="background-color: white;">
       </div>
       <div class="form-group">

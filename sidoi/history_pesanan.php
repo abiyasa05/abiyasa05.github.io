@@ -193,7 +193,7 @@ $em = $ambil->fetch_assoc();
 
                                 <?php if ($pecah['status_pembelian'] == "pending") : ?>
                                     <a href="pembayaran.php?id=<?php echo $pecah["id_pembelian"]; ?>" class="btn btn-success mb-1">
-                                        Input Pembayaran
+                                        Konfirmasi Pembayaran
                                     </a>
                                 <?php elseif ($pecah['status_pembelian'] == "sudah kirim pembayaran" || $pecah['status_pembelian'] == "barang dikirim") : ?>
                                     <a href="lihat_pembayaran.php?id=<?php echo $pecah["id_pembelian"]; ?>" class="btn btn-secondary mb-1">

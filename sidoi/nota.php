@@ -121,7 +121,7 @@ $em = $ambil->fetch_assoc();
 
 			<br><br><br>
 
-			<h3 style="margin-top: 35px;">Detail Transaksi</h3>
+			<h3 style="margin-top: 35px;">Detail Pesanan</h3>
 			<hr color="black">
 
 			<?php
@@ -212,7 +212,7 @@ $em = $ambil->fetch_assoc();
 					</div>
 				</div>
 			</div>
-			<a href="history_pesanan.php" class="btn btn-primary">Riwayat Belanja</a>
+			<a href="history_pesanan.php" class="btn btn-primary">History Pesanan</a>
 		</div>
 	</section>
 	<!-- Konten -->

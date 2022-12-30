@@ -1,4 +1,4 @@
-<h2>Data Pembayaran</h2>
+<h2>Konfirmasi Pembayaran</h2>
 <hr color="black">
 
 <?php
@@ -47,10 +47,6 @@ $pecah = $ambil->fetch_assoc();
 
 <form method="post">
 	<div class="form-group">
-		<label>No Resi Pengiriman</label>
-		<input type="text" name="resi" class="form-control">
-	</div>
-	<div class="form-group">
 		<label>Status</label>
 		<select class="form-control" name="status">
 			<option value="">Pilih Status</option>
@@ -65,7 +61,7 @@ $pecah = $ambil->fetch_assoc();
 if (isset($_POST["proses"])) {
 	$resi = $_POST["resi"];
 	$status = $_POST["status"];
-	$koneksi->query("UPDATE pembelian SET resi_pengiriman='$resi', status_pembelian='$status' WHERE id_pembelian='$id_pembelian'");
+	$koneksi->query("UPDATE pembelian SET status_pembelian='$status' WHERE id_pembelian='$id_pembelian'");
 
 	echo "<script>location='index.php?halaman=pembelian';</script>";
 }

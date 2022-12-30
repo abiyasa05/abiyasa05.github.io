@@ -1,4 +1,4 @@
-<h2>Data Pembayaran</h2>
+<h2>Detail Pembayaran</h2>
 <hr color="black">
 
 <?php

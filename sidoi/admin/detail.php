@@ -33,7 +33,7 @@
 	<thead>
 		<tr>
 			<th>No</th>
-			<th>Nama Produk</th>
+			<th>Nama Paket</th>
 			<th>Harga</th>
 			<th>Jumlah</th>
 			<th>Subtotal</th>
