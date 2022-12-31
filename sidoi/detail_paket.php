@@ -174,7 +174,7 @@ $em = $ambil->fetch_assoc();
                     <h6><label style="margin-top: 25px;">Jumlah orang</label></h6>
                     <form method="post" class="form-inline">
                         <div class="form-group">
-                            <input type="number" value="0" min="1" max="<?php echo $detail["stok_produk"]; ?>" class="form-control mb-2" name="jumlah">
+                            <input type="number" value="0" min="1" class="form-control mb-2" name="jumlah">
                             <div class="input-group-btn mb-2">
                                 <button class="btn btn-primary" name="beli">Pesan</button>
                                 <a href="tambahwishlist.php?id=<?php echo $detail["id_produk"]; ?>" class="btn btn-primary"><i class="icon-bookmark"></i></a>
